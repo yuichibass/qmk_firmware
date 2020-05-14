@@ -54,6 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 void matrix_init_user(void) {
     init_paw3204();
+    setPinInputHigh(D2);
 }
 
 report_mouse_t mouse_rep;
@@ -65,6 +66,7 @@ void keyboard_post_init_user() {
 
 void matrix_scan_user(void) {
     static int  cnt;
+    static int  btn1;
     static bool paw_ready;
     if (cnt++ % 50 == 0) {
         uint8_t pid = read_pid_paw3204();
@@ -75,6 +77,8 @@ void matrix_scan_user(void) {
             dprintf("paw3204 NG:%d\n", pid);
             paw_ready = false;
         }
+
+        btn1 = readPin(D2);
     }
 
     if (paw_ready) {
@@ -89,17 +93,23 @@ void matrix_scan_user(void) {
         //r_y = -x * sin(kakudo) + y * cos(kakudo);
 
         mouse_rep.buttons = 0;
+        if (btn1 == 1) {
+            mouse_rep.buttons |= MOUSE_BTN1;
+        } else {
+            mouse_rep.buttons &= ~MOUSE_BTN1;
+        }
         mouse_rep.h       = 0;
         mouse_rep.v       = 0;
         mouse_rep.x       = y;
         mouse_rep.y       = -x;
+        pointing_device_set_report(mouse_rep);
 
         if (cnt % 10 == 0) {
             dprintf("stat:%3d x:%4d y:%4d\n", stat, mouse_rep.x, mouse_rep.y);
         }
 
-        if (stat & 0x80) {
-            pointing_device_set_report(mouse_rep);
-        }
+        //if (stat & 0x80) {
+        //    pointing_device_set_report(mouse_rep);
+        //}
     }
 }

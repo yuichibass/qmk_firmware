@@ -15,14 +15,17 @@
  */
 #include QMK_KEYBOARD_H
 
-#include "paw3204.h"
-#include "pointing_device.h"
-
 // Defines names for use in layer keycodes and the keymap
 enum layer_names {
     _BASE,
     _LOWER,
     _RAISE
+};
+
+enum custom_keycodes {
+    QWERTY = SAFE_RANGE,
+    LOWER,
+    RAISE,
 };
 
 #define L_SPC LT(_LOWER, KC_SPC)
@@ -37,7 +40,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 					KC_A,	KC_B,		KC_C,	KC_D,	KC_E			
     ),
     [_LOWER] = LAYOUT(
-	KC_TRNS,	KC_NO,	KC_MS_BTN3,	KC_MS_BTN2,	KC_MS_BTN1,	KC_NO,		KC_NO,	KC_EQL,	KC_PLUS,	KC_ASTR,	KC_PERC,	KC_TRNS,
+	KC_TRNS,	KC_NO,	KC_NO, KC_NO,	KC_NO,	KC_NO,		KC_NO,	KC_EQL,	KC_PLUS,	KC_ASTR,	KC_PERC,	KC_TRNS,
 	KC_TRNS,	KC_1,	KC_2,	KC_3,	KC_4,	KC_5,	LCMD(KC_BSPC),	KC_6,	KC_7,	KC_8,	KC_9,	KC_0,	KC_TRNS,
 	KC_TRNS,	KC_NO,	KC_NO,	KC_NO,	KC_NO,	KC_NO,		KC_NO,	KC_NO,	KC_TRNS,	KC_TRNS,	KC_TRNS,	KC_TRNS,
 				RESET,	KC_TRNS,	KC_NO,		KC_DEL,	KC_TRNS,	KC_TRNS,			
@@ -52,49 +55,3 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    ),
 };
 
-void matrix_init_user(void) {
-    init_paw3204();
-}
-
-report_mouse_t mouse_rep;
-
-void keyboard_post_init_user() {
-    debug_enable = true;
-    debug_mouse = true;
-}
-
-void matrix_scan_user(void) {
-    static int  cnt;
-    static bool paw_ready;
-    if (cnt++ % 50 == 0) {
-        uint8_t pid = read_pid_paw3204();
-        if (pid == 0x30) {
-            dprint("paw3204 OK\n");
-            paw_ready = true;
-        } else {
-            dprintf("paw3204 NG:%d\n", pid);
-            paw_ready = false;
-        }
-    }
-
-    if (paw_ready) {
-        uint8_t stat;
-        int8_t x, y;
-
-        read_paw3204(&stat, &x, &y);
-
-        mouse_rep.buttons = 0;
-        mouse_rep.h       = 0;
-        mouse_rep.v       = 0;
-        mouse_rep.x       = y;
-        mouse_rep.y       = -x;
-
-        if (cnt % 10 == 0) {
-            dprintf("stat:%3d x:%4d y:%4d\n", stat, mouse_rep.x, mouse_rep.y);
-        }
-
-        if (stat & 0x80) {
-            pointing_device_set_report(mouse_rep);
-        }
-    }
-}

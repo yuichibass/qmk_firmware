@@ -1,4 +1,4 @@
-# ymp10
+# bat43tb
 
 Keyboard Maintainer: [@yfuku_](https://twitter.com/yfuku_)  
 Hardware Supported: bat43tb PCB

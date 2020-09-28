@@ -39,15 +39,12 @@ enum custom_keycodes {
     SCRL
 };
 
-#define L_SPC LT(_LOWER, KC_SPC)
-#define R_ENT LT(_RAISE, KC_ENT)
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = LAYOUT(
-  KC_ESC,   KC_Q,  KC_W,         KC_E,         KC_R,         KC_T,                         KC_Y,         KC_U,         KC_I,         KC_O,         KC_P,     KC_MINS,
-  KC_TAB,   KC_A,  SGUI_T(KC_S), LALT_T(KC_D), LGUI_T(KC_F), LCTL_T(KC_G),     KC_NO,      RCTL_T(KC_H), RGUI_T(KC_J), RALT_T(KC_K), SGUI_T(KC_L), KC_SCLN,  KC_ESC,
-  KC_LEFT,  KC_Z,  KC_X,         KC_C,         KC_V,         KC_B,          KC_NO, KC_NO,  KC_N,         KC_M,         KC_COMM,      KC_DOT,       KC_SLSH,  KC_RIGHT,
-                                   MBTN1, LSFT_T(KC_LANG2), LT(1, KC_SPC),     KC_NO,      LT(2, KC_ENT), LSFT_T(KC_LANG1), MBTN2
+     SCRL,  KC_Q,  KC_W,         KC_E,         KC_R,         KC_T,                           KC_Y,         KC_U,         KC_I,         KC_O,         KC_P,     KC_MINS,
+   KC_TAB,  KC_A,  SGUI_T(KC_S), LALT_T(KC_D), LGUI_T(KC_F), LCTL_T(KC_G),      KC_NO,       RCTL_T(KC_H), RGUI_T(KC_J), RALT_T(KC_K), SGUI_T(KC_L), KC_SCLN,  KC_ESC,
+  KC_LEFT,  KC_Z,  KC_X,         KC_C,         KC_V,         KC_B,           KC_NO, KC_NO,   KC_N,         KC_M,         KC_COMM,      KC_DOT,       KC_SLSH,  KC_RIGHT,
+                                   MBTN1, LSFT_T(KC_LANG2), LT(1, KC_SPC),      KC_NO,       LT(2, KC_ENT), LSFT_T(KC_LANG1), MBTN2
     ),
     [_LOWER] = LAYOUT(
   KC_TRNS,  KC_NO,    KC_NO,   KC_NO,    KC_NO,    KC_NO,                        KC_NO,   KC_EQL,   KC_PLUS,  KC_ASTR,  KC_PERC,  KC_TRNS,
@@ -56,10 +53,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                  RESET,  KC_TRNS,  KC_NO,         KC_NO,         KC_DEL,  KC_TRNS,  KC_TRNS      
     ),
     [_RAISE] = LAYOUT(
-  KC_TRNS,  KC_BSLS,  KC_EXLM,  KC_AMPR,  KC_PIPE,  KC_NO           ,    KC_NO,  KC_EQL,  KC_PLUS,  KC_ASTR,  KC_PERC,  KC_TRNS,
-  KC_TRNS,  KC_HASH,  KC_GRV,  KC_DQUO,  KC_QUOT,  KC_TILD, LCMD(KC_BSPC),  KC_LEFT,  KC_DOWN,  KC_UP,  KC_RGHT,  KC_DLR,  KC_TRNS,
-  KC_TRNS,  KC_NO,  KC_NO,  KC_LCBR,  KC_LBRC,  KC_LPRN, KC_NO, KC_NO,    KC_RPRN,  KC_RBRC,  KC_RCBR,  KC_AT,  KC_CIRC,  KC_TRNS,
-        KC_TRNS,  KC_TRNS,  KC_BSPC, KC_NO,    KC_NO,  KC_TRNS,  RESET
+  KC_TRNS,  KC_BSLS,  KC_EXLM,  KC_AMPR,  KC_PIPE,  KC_NO,                       KC_NO,    KC_EQL,   KC_PLUS,  KC_ASTR,  KC_PERC,  KC_TRNS,
+  KC_TRNS,  KC_HASH,  KC_GRV,   KC_DQUO,  KC_QUOT,  KC_TILD,      KC_NO,         KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  KC_DLR,   KC_TRNS,
+  KC_TRNS,  KC_NO,    KC_NO,    KC_LCBR,  KC_LBRC,  KC_LPRN,   KC_NO, KC_NO,     KC_RPRN,  KC_RBRC,  KC_RCBR,  KC_AT,    KC_CIRC,  KC_TRNS,
+                                KC_TRNS,  KC_TRNS,  KC_BSPC,      KC_NO,         KC_NO,  KC_TRNS,  RESET
    ),
     [_TB] = LAYOUT(
   KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS,  KC_TRNS,  KC_TRNS,                      KC_TRNS, KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,
@@ -81,7 +78,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         currentReport.buttons &= ~MOUSE_BTN1;
       }
       pointing_device_set_report(currentReport);
-      //pointing_device_send();
       return false;
     case MBTN2:
       currentReport = pointing_device_get_report();
@@ -92,7 +88,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         currentReport.buttons &= ~MOUSE_BTN2;
       }
       pointing_device_set_report(currentReport);
-      //pointing_device_send();
       return false;
     case MBTN3:
       currentReport = pointing_device_get_report();
@@ -103,7 +98,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         currentReport.buttons &= ~MOUSE_BTN3;
       }
       pointing_device_set_report(currentReport);
-      //pointing_device_send();
       return false;
     case SCRL:
       if (record->event.pressed) {
@@ -139,21 +133,27 @@ void matrix_scan_user(void) {
     if (cnt++ % 50 == 0) {
         uint8_t pid = read_pid_paw3204();
         if (pid == 0x30) {
-            //dprint("paw3204 OK\n");
+            dprint("paw3204 OK\n");
             paw_ready = true;
         } else {
-            //dprintf("paw3204 NG:%d\n", pid);
+            dprintf("paw3204 NG:%d\n", pid);
             paw_ready = false;
         }
 
-        tb_layer = readPin(B0);
-        //dprintf("touch:%d", tb_layer);
-        if (tb_layer == 1) {
-            layer_on(_TB);
+        if (readPin(B0) == 1) {
+            if (tb_layer == 0) {
+                dprint("tb layer on\n");
+                layer_on(_TB);
+                tb_layer = 1;
+            }
         } else {
-            layer_off(_TB);
+            if (tb_layer == 1) {
+                layer_off(_TB);
+                dprint("tb layer off\n");
+                tb_layer = 0;
+            }
         }
-   }
+    }
 
     if (paw_ready) {
         uint8_t stat;
@@ -162,15 +162,18 @@ void matrix_scan_user(void) {
         read_paw3204(&stat, &x, &y);
 
         if (isScrollMode) {
-            mouse_rep.h = -y/10;
-            mouse_rep.v = -x/10;
+            if (cnt % 5 == 0) {
+                mouse_rep.v = -x/10;
+                mouse_rep.h = -y/10;
+            }
+
         } else {
             mouse_rep.x = -y;
             mouse_rep.y = x;
         }
 
         if (cnt % 10 == 0) {
-            //dprintf("stat:%3d x:%4d y:%4d\n", stat, mouse_rep.x, mouse_rep.y);
+            dprintf("stat:%3d x:%4d y:%4d h:%4d v:%4d\n", stat, mouse_rep.x, mouse_rep.y, mouse_rep.h, mouse_rep.v);
         }
 
         if (stat & 0x80) {

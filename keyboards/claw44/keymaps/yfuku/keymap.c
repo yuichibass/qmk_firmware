@@ -21,10 +21,6 @@ enum custom_keycodes {
   RAISE
 };
 
-enum macro_keycodes {
-  KC_SAMPLEMACRO,
-};
-
 // common
 #define KC_ KC_TRNS
 #define KC_XXXX KC_NO
@@ -37,47 +33,43 @@ enum macro_keycodes {
 #define KC_R_ENT LT(_RAISE, KC_ENT)
 
 // shift_t
-#define KC_S_TAB LSFT_T(KC_TAB)
-#define KC_S_ESC LSFT_T(KC_ESC)
-#define KC_S_JA LSFT_T(KC_LANG1)
 #define KC_S_EN LSFT_T(KC_LANG2)
+#define KC_S_JA LSFT_T(KC_LANG1)
 
 // cmd_t
-#define KC_M_F LCMD_T(KC_F)
-#define KC_M_D LCMD_T(KC_D)
-#define KC_M_J LCMD_T(KC_J)
-#define KC_M_K LCMD_T(KC_K)
+#define KC_G_F LCMD_T(KC_F)
+#define KC_G_J RCMD_T(KC_J)
 
 // ctl_t
-#define KC_C_S LCTL_T(KC_S)
-#define KC_C_L LCTL_T(KC_L)
-#define KC_C_BS LCTL_T(KC_BSPC)
+#define KC_C_G LCTL_T(KC_G)
+#define KC_C_H RCTL_T(KC_H)
 
 // alt_t
 #define KC_A_D ALT_T(KC_D)
 #define KC_A_K ALT_T(KC_K)
-#define KC_A_Z ALT_T(KC_Z)
-#define KC_A_SL ALT_T(KC_SLSH)
-#define KC_A_DEL ALT_T(KC_DEL)
 
 // cmd+shift_t
-#define KC_MS_Q SCMD_T(KC_Q)
-#define KC_MS_A SCMD_T(KC_A)
-#define KC_MS_S SCMD_T(KC_S)
-#define KC_MS_SC SCMD_T(KC_SCLN)
-#define KC_MS_ESC SCMD_T(KC_ESC)
+#define KC_GS_S SCMD_T(KC_S)
+#define KC_GS_L SCMD_T(KC_L)
 
 //
-#define KC_MR RCMD(KC_R)
-#define KC_MF RCMD(KC_F)
-#define KC_MW RCMD(KC_W)
-#define KC_MX RCMD(KC_X)
-#define KC_MC RCMD(KC_C)
-#define KC_MV RCMD(KC_V)
-#define KC_MTAB RCMD(KC_TAB)
-#define KC_MSF RCMD(RSFT(KC_F))
-#define KC_MSR RCMD(RSFT(KC_R))
-#define KC_MST RCMD(RSFT(KC_T))
+#define KC_MISS C(KC_UP)
+
+#define TAPPING_LAYER_TERM 230
+uint16_t get_tapping_term(uint16_t keycode) {
+  switch (keycode) {
+    case KC_GS_S:
+      return TAPPING_LAYER_TERM;
+    case KC_GS_L:
+      return TAPPING_LAYER_TERM;
+    case KC_A_D:
+      return TAPPING_LAYER_TERM;
+    case KC_A_K:
+      return TAPPING_LAYER_TERM;
+    default:
+      return TAPPING_TERM;
+  }
+}
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -90,27 +82,27 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_QWERTY] = LAYOUT_kc( \
   //,----+----+----+----+----+----.     ,----+----+----+----+----+----.
-     ESC , Q  , W  , E  , R  , T  ,       Y  , U  , I  , O  , P  ,MINS,
+      ESC, Q  , W  , E  , R  , T  ,       Y  , U  , I  , O  , P  ,MINS,
   //|----+----+----+----+----+----|     |----+----+----+----+----+----|
-    S_TAB, A  ,C_S , D  ,M_F , G  ,       H  ,M_J , K  ,C_L ,SCLN,S_ESC,
+      TAB, A  ,GS_S,A_D ,G_F ,C_G ,      C_H ,G_J ,A_K ,GS_L,SCLN,ESC ,
   //|----+----+----+----+----+----+     |----+----+----+----+----+----|
-         , Z  , X  , C  , V  , B  ,       N  , M  ,COMM,DOT ,SLSH,    ,
+       Z , Z  , X  , C  , V  , B  ,       N  , M  ,COMM,DOT ,SLSH,    ,
   //`----+----+----+----+----+----/     \----+----+----+----+----+----'
-             A_DEL,S_EN,L_SPC,C_BS,      C_BS,R_ENT,S_JA,A_DEL
+                  ,S_EN,L_SPC,BSPC,      BSPC,R_ENT,S_JA,
   //          `----+----+----+----'     `----+----+----+----'
   ),
 
-  //   \ ^ ! & |  @ = + * % -
-  // ( # $ " ' ~  ← ↓ ↑ → ` )
-  //         { [  ] }
+  //   \ ! & |      = + * %
+  //   # ` " ' ~  ← ↓ ↑ → $
+  //       { [ (  ) ] } @ ^
 
   [_RAISE] = LAYOUT_kc( \
   //,----+----+----+----+----+----.     ,----+----+----+----+----+----.
-         ,BSLS,CIRC,EXLM,AMPR,PIPE,      AT  ,EQL ,PLUS,ASTR,PERC,MINS,
+         ,BSLS,EXLM,AMPR,PIPE,XXXX,      XXXX,EQL ,PLUS,ASTR,PERC,MINS,
   //|----+----+----+----+----+----|     |----+----+----+----+----+----|
-     LPRN,HASH,DLR ,DQT ,QUOT,TILD,      LEFT,DOWN, UP ,RGHT,GRV ,RPRN,
+         ,HASH,GRV ,DQT ,QUOT,TILD,      LEFT,DOWN, UP ,RGHT,DLR ,    ,
   //|----+----+----+----+----+----|     |----+----+----+----+----+----|
-        ,     ,    ,    ,LCBR,LBRC,      RBRC,RCBR,    ,    ,    ,    ,
+         ,    ,    ,LCBR,LBRC,LPRN,      RPRN,RBRC,RCBR,AT  ,CIRC,    ,
   //`----+----+----+----+----+----/     \----+----+----+----+----+----'
                    ,    ,BSPC,    ,          ,    ,    ,RST
   //          `----+----+----+----'     `----+----+----+----'
@@ -118,7 +110,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_kc( \
   //,----+----+----+----+----+----.     ,----+----+----+----+----+----.
-         ,    ,    ,MSF ,MSR ,MST ,          ,EQL ,PLUS,ASTR,PERC,MINS,
+         ,    ,    ,    ,    ,XXXX,      XXXX,EQL ,PLUS,ASTR,PERC,MINS,
   //|----+----+----+----+----+----|     |----+----+----+----+----+----|
          , 1  , 2  , 3  , 4  , 5  ,       6  , 7  , 8  , 9  , 0  ,    ,
   //|----+----+----+----+----+----|     |----+----+----+----+----+----|
@@ -127,7 +119,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                RST ,    ,    ,    ,          ,DEL ,    ,
   //          `----+----+----+----'     `----+----+----+----'
   ),
+
 };
+
+
 
 void matrix_init_user(void) {
   //SSD1306 OLED init, make sure to add #define SSD1306OLED in config.h

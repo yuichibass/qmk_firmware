@@ -88,7 +88,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+     |----+----+----+----+----+----|
        Z , Z  , X  , C  , V  , B  ,       N  , M  ,COMM,DOT ,SLSH,    ,
   //`----+----+----+----+----+----/     \----+----+----+----+----+----'
-                  ,S_EN,L_SPC,BSPC,      BSPC,R_ENT,S_JA,
+              LSFT,S_EN,L_SPC,BSPC,      BSPC,R_ENT,S_JA,RSFT
   //          `----+----+----+----'     `----+----+----+----'
   ),
 

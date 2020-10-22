@@ -235,8 +235,8 @@ void matrix_scan_user(void) {
 
         if (isScrollMode) {
             if (cnt % 5 == 0) {
-                mouse_rep.v = -x/10;
-                mouse_rep.h = -y/10;
+                mouse_rep.v = x/10;
+                mouse_rep.h = y/10;
             }
 
         } else {

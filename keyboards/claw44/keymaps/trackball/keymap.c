@@ -90,7 +90,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+     |----+----+----+----+----+----|
          , Z  , X  , C  , V  , B  ,       N  , M  ,COMM,DOT ,SLSH,    ,
   //`----+----+----+----+----+----/     \----+----+----+----+----+----'
-                   ,S_EN,L_SPC,BSPC,     BSPC,R_ENT,S_JA,
+                   ,S_EN,L_SPC,SCRL,     BSPC,R_ENT,S_JA,
   //          `----+----+----+----'     `----+----+----+----'
   ),
 
@@ -130,7 +130,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|     |----+----+----+----+----+----|
          ,    ,    ,    ,    ,    ,          ,    ,    ,    ,    ,    ,
   //`----+----+----+--+-+----+----/     \----+----+----+----+----+----'
-            MBTN3,MBTN2,MBTN1,SCRL,     MBTN1,    ,    ,    
+            MBTN3,SCRL,MBTN1,MBTN2,     MBTN1,    ,    ,    
   //          `----+----+----+----'     `----+----+----+----'
   ),
 
@@ -230,18 +230,23 @@ void matrix_scan_user(void) {
     if (paw_ready) {
         uint8_t stat;
         int8_t x, y;
+        int8_t r_x, r_y;
+        int8_t degree = 45;
 
         read_paw3204(&stat, &x, &y);
 
+        r_x =  x * cos(degree) + y * sin(degree);
+        r_y = -x * sin(degree) + y * cos(degree);
+
         if (isScrollMode) {
             if (cnt % 5 == 0) {
-                mouse_rep.v = x/10;
-                mouse_rep.h = y/10;
+                mouse_rep.v = -r_y/10;
+                mouse_rep.h = r_x/10;
             }
 
         } else {
-            mouse_rep.x = y;
-            mouse_rep.y = -x;
+            mouse_rep.x = r_x;
+            mouse_rep.y = r_y;
         }
 
         if (cnt % 10 == 0) {

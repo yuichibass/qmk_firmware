@@ -31,11 +31,27 @@ enum custom_keycodes {
 #define L_SPC LT(_LOWER, KC_SPC)
 #define R_ENT LT(_RAISE, KC_ENT)
 
+#define TAPPING_LAYER_TERM 230
+uint16_t get_tapping_term(uint16_t keycode) {
+  switch (keycode) {
+    case SGUI_T(KC_S):
+      return TAPPING_LAYER_TERM;
+    case SGUI_T(KC_L):
+      return TAPPING_LAYER_TERM;
+    case LALT_T(KC_D):
+      return TAPPING_LAYER_TERM;
+    case RALT_T(KC_K):
+      return TAPPING_LAYER_TERM;
+    default:
+      return TAPPING_TERM;
+  }
+}
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = LAYOUT(
 	KC_ESC,	KC_Q,	KC_W,	KC_E,	KC_R,	KC_T,		KC_Y,	KC_U,	KC_I,	KC_O,	KC_P,	KC_MINS,
 	KC_TAB,	KC_A,	SGUI_T(KC_S),	LALT_T(KC_D),	LGUI_T(KC_F),	LCTL_T(KC_G),	KC_BSPC,	RCTL_T(KC_H),	RGUI_T(KC_J),	RALT_T(KC_K),	SGUI_T(KC_L),	KC_SCLN,	KC_ESC,
-	KC_NO,	KC_Z,	KC_X,	KC_C,	KC_V,	KC_B,		KC_N,	KC_M,	KC_COMM,	KC_DOT,	KC_SLSH,	KC_NO,
+	KC_LEFT,	KC_Z,	KC_X,	KC_C,	KC_V,	KC_B,		KC_N,	KC_M,	KC_COMM,	KC_DOT,	KC_SLSH,	KC_RGHT,
 				KC_NO,	LSFT_T(KC_LANG2),	LT(1, KC_SPC),		LT(2, KC_ENT),	LSFT_T(KC_LANG1),	KC_NO,			
 					KC_A,	KC_B,		KC_C,	KC_D,	KC_E			
     ),

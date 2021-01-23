@@ -10,6 +10,7 @@ enum layer_number {
     _QWERTY = 0,
     _RAISE,
     _LOWER,
+    _ADJUST,
 };
 
 #define KC_ KC_TRNS
@@ -57,6 +58,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                           RESET  , _______, _______, _______,     _______, _______, _______, _______
     //                  `--------+--------+--------+--------'   `--------+--------+--------+--------'
     ),
+    [_ADJUST] = LAYOUT( \
+    //,--------+--------+--------+--------+--------+--------.   ,--------+--------+--------+--------+--------+--------.
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    //`--------+--------+--------+--------+--------+--------/   \--------+--------+--------+--------+--------+--------'
+                         KC_TRNS, KC_TRNS, KC_TRNS , KC_TRNS,     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
+    //                  `--------+--------+--------+--------'   `--------+--------+--------+--------'
+    ),
 };
 
 #ifdef OLED_DRIVER_ENABLE
@@ -71,6 +83,9 @@ void render_layer_state(void) {
             break;
         case _LOWER:
             oled_write_ln_P(PSTR("Layer: Lower"), false);
+            break;
+        case _ADJUST:
+            oled_write_ln_P(PSTR("Layer: Adjust"), false);
             break;
         default:
             oled_write_ln_P(PSTR("Layer: Undefined"), false);

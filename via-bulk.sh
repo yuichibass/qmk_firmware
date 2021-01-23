@@ -2,7 +2,7 @@
 set -e
 set -x
 
-for tapping_term in `seq -f %03g 1 5`
+for tapping_term in `seq 1 500`
 do
   keymap=via-default-$tapping_term
   keymap_path=./keyboards/claw44/keymaps/$keymap
@@ -18,13 +18,13 @@ do
   cp -pr $keymap_path $imti_keymap_path
   make claw44:$imti_keymap
 
-#  rm -rf $keymap_path
-#  rm -rf $imti_keymap_path
+  rm -rf $keymap_path
+  rm -rf $imti_keymap_path
 done
 
-for tapping_term in `seq -f %03g 1 5`
+for tapping_term in `seq 1 500`
 do
-  keymap=via-oled-$tapping_ter
+  keymap=via-oled-$tapping_term
   keymap_path=./keyboards/claw44/keymaps/$keymap
   echo $keymap
 
@@ -38,6 +38,6 @@ do
   cp -pr $keymap_path $imti_keymap_path
   make claw44:$imti_keymap
 
-#  rm -rf $keymap_path
-#  rm -rf $imti_keymap_path
+  rm -rf $keymap_path
+  rm -rf $imti_keymap_path
 done

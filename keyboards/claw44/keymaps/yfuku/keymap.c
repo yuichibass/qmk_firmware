@@ -21,6 +21,12 @@ enum custom_keycodes {
   RAISE
 };
 
+enum layer_number {
+    _QWERTY = 0,
+    _RAISE,
+    _LOWER,
+};
+
 // common
 #define KC_ KC_TRNS
 #define KC_XXXX KC_NO
@@ -56,7 +62,7 @@ enum custom_keycodes {
 #define KC_MISS C(KC_UP)
 
 #define TAPPING_LAYER_TERM 230
-uint16_t get_tapping_term(uint16_t keycode) {
+uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
     case KC_GS_S:
       return TAPPING_LAYER_TERM;

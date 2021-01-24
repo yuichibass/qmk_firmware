@@ -32,7 +32,7 @@ enum custom_keycodes {
 #define R_ENT LT(_RAISE, KC_ENT)
 
 #define TAPPING_LAYER_TERM 230
-uint16_t get_tapping_term(uint16_t keycode) {
+uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
     case SGUI_T(KC_S):
       return TAPPING_LAYER_TERM;

@@ -92,7 +92,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|     |----+----+----+----+----+----|
       TAB, A  ,GS_S,A_D ,G_F ,C_G ,      C_H ,G_J ,A_K ,GS_L,SCLN,ESC ,
   //|----+----+----+----+----+----+     |----+----+----+----+----+----|
-       Z , Z  , X  , C  , V  , B  ,       N  , M  ,COMM,DOT ,SLSH,    ,
+         , Z  , X  , C  , V  , B  ,       N  , M  ,COMM,DOT ,SLSH,    ,
   //`----+----+----+----+----+----/     \----+----+----+----+----+----'
               LSFT,S_EN,L_SPC,BSPC,      BSPC,R_ENT,S_JA,RSFT
   //          `----+----+----+----'     `----+----+----+----'

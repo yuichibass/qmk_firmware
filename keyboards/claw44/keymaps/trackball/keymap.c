@@ -9,6 +9,13 @@ extern uint8_t is_master;
 
 bool isScrollMode;
 
+enum keymap_layers {
+  _QWERTY,
+  _LOWER,
+  _RAISE,
+  _TB,
+};
+
 // Each layer gets a name for readability, which is then used in the keymap matrix below.
 // The underscores don't mean anything - you can have a layer called STUFF or any other name.
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
@@ -58,7 +65,7 @@ enum custom_keycodes {
 #define KC_MISS C(KC_UP)
 
 #define TAPPING_LAYER_TERM 230
-uint16_t get_tapping_term(uint16_t keycode) {
+uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
     case KC_GS_S:
       return TAPPING_LAYER_TERM;

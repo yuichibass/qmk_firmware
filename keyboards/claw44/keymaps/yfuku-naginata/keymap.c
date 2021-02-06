@@ -44,29 +44,95 @@ enum custom_keycodes {
 
 uint32_t oled_sleep_timer;
 
-#define CTLSPC  CTL_T(KC_SPC)
-#define CTLENT  CTL_T(KC_ENT)
+// common
+#define KC_ KC_TRNS
+#define KC_XXXX KC_NO
+#define KC_RST RESET
+#define KC_VD KC__VOLDOWN
+#define KC_VU KC__VOLUP
+
+// layer
+#define KC_L_SPC LT(_LOWER, KC_SPC)
+#define KC_R_ENT LT(_RAISE, KC_ENT)
+
+// shift_t
+#define KC_S_EN LSFT_T(KC_LANG2)
+#define KC_S_JA LSFT_T(KC_LANG1)
+
+// cmd_t
+#define KC_G_F LCMD_T(KC_F)
+#define KC_G_J RCMD_T(KC_J)
+
+// ctl_t
+#define KC_C_G LCTL_T(KC_G)
+#define KC_C_H RCTL_T(KC_H)
+
+// alt_t
+#define KC_A_D ALT_T(KC_D)
+#define KC_A_K ALT_T(KC_K)
+
+// cmd+shift_t
+#define KC_GS_S SCMD_T(KC_S)
+#define KC_GS_L SCMD_T(KC_L)
+
+//
+#define KC_MISS C(KC_UP)
+
+#define TAPPING_LAYER_TERM 230
+uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
+  switch (keycode) {
+    case KC_GS_S:
+      return TAPPING_LAYER_TERM;
+    case KC_GS_L:
+      return TAPPING_LAYER_TERM;
+    case KC_A_D:
+      return TAPPING_LAYER_TERM;
+    case KC_A_K:
+      return TAPPING_LAYER_TERM;
+    default:
+      return TAPPING_TERM;
+  }
+}
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-  [_QWERTY] = LAYOUT(
-    KC_ESC ,KC_Q   ,KC_W   ,KC_E   ,KC_R   ,KC_T   ,                KC_Y   ,KC_U   ,KC_I   ,KC_O   ,KC_P   ,KC_BSPC, \
-    KC_TAB ,KC_A   ,KC_S   ,KC_D   ,KC_F   ,KC_G   ,                KC_H   ,KC_J   ,KC_K   ,KC_L   ,JP_SCLN,KC_LALT, \
-    KC_LCTL,KC_Z   ,KC_X   ,KC_C   ,KC_V   ,KC_B   ,                KC_N   ,KC_M   ,JP_COMM,JP_DOT ,JP_SLSH,KC_RSFT, \
-                         KC_NO,MO(_LOWER),KC_LSFT,CTLSPC ,CTLENT ,KC_RSFT,MO(_RAISE),KC_NO
+  [_QWERTY] = LAYOUT_kc( \
+  //,----+----+----+----+----+----.     ,----+----+----+----+----+----.
+      ESC, Q  , W  , E  , R  , T  ,       Y  , U  , I  , O  , P  ,MINS,
+  //|----+----+----+----+----+----|     |----+----+----+----+----+----|
+      TAB, A  ,GS_S,A_D ,G_F ,C_G ,      C_H ,G_J ,A_K ,GS_L,SCLN,ESC ,
+  //|----+----+----+----+----+----+     |----+----+----+----+----+----|
+         , Z  , X  , C  , V  , B  ,       N  , M  ,COMM,DOT ,SLSH,    ,
+  //`----+----+----+----+----+----/     \----+----+----+----+----+----'
+              LSFT,S_EN,L_SPC,BSPC,      BSPC,R_ENT,S_JA,RSFT
+  //          `----+----+----+----'     `----+----+----+----'
   ),
 
-  [_LOWER] = LAYOUT(
-    _______,JP_TILD,JP_AT  ,JP_HASH,JP_DLR ,JP_PERC,                JP_SLSH,KC_7   ,KC_8   ,KC_9   ,JP_MINS,KC_DEL, \
-    _______,JP_CIRC,JP_AMPR,JP_EXLM,JP_QUES,JP_BSLS,                JP_ASTR,KC_4   ,KC_5   ,KC_6   ,JP_PLUS,JP_DOT , \
-    _______,JP_PIPE,JP_GRV ,JP_QUOT,JP_DQT ,JP_UNDS,                KC_0   ,KC_1   ,KC_2   ,KC_3   ,JP_EQL ,JP_COMM, \
-                    _______,_______,_______,_______,                _______,KANA2  ,_______,_______
+  //   \ ! & |      = + * %
+  //   # ` " ' ~  ← ↓ ↑ → $
+  //       { [ (  ) ] } @ ^
+
+  [_RAISE] = LAYOUT_kc( \
+  //,----+----+----+----+----+----.     ,----+----+----+----+----+----.
+         ,BSLS,EXLM,AMPR,PIPE,XXXX,      XXXX,EQL ,PLUS,ASTR,PERC,MINS,
+  //|----+----+----+----+----+----|     |----+----+----+----+----+----|
+         ,HASH,GRV ,DQT ,QUOT,TILD,      LEFT,DOWN, UP ,RGHT,DLR ,    ,
+  //|----+----+----+----+----+----|     |----+----+----+----+----+----|
+         ,    ,    ,LCBR,LBRC,LPRN,      RPRN,RBRC,RCBR,AT  ,CIRC,    ,
+  //`----+----+----+----+----+----/     \----+----+----+----+----+----'
+                   ,    ,BSPC,    ,          ,    ,    ,RST
+  //          `----+----+----+----'     `----+----+----+----'
   ),
 
-  [_RAISE] = LAYOUT(
-    NG_TAYO   ,NGSW_WIN   ,NG_SHOS   ,XXXXXXX   ,XXXXXXX   ,XXXXXXX   ,                      XXXXXXX   ,XXXXXXX   ,KC_UP     ,XXXXXXX   ,KC_PGUP   ,KC_DEL   , \
-    NG_MLV    ,NGSW_MAC   ,JP_LBRC   ,JP_LCBR   ,JP_LPRN   ,JP_LT     ,                      KC_HOME   ,KC_LEFT   ,KC_DOWN   ,KC_RGHT   ,KC_PGDN   ,XXXXXXX   , \
-    NG_KOTI   ,NGSW_LNX   ,JP_RBRC   ,JP_RCBR   ,JP_RPRN   ,JP_GT     ,                      KC_END    ,S(KC_LEFT),S(KC_DOWN),S(KC_RGHT),XXXXXXX   ,XXXXXXX   , \
-                           _______   ,_______   ,EISU      ,_______   ,                      _______   ,_______   ,_______   ,_______
+  [_LOWER] = LAYOUT_kc( \
+  //,----+----+----+----+----+----.     ,----+----+----+----+----+----.
+         ,    ,    ,    ,    ,XXXX,      XXXX,EQL ,PLUS,ASTR,PERC,MINS,
+  //|----+----+----+----+----+----|     |----+----+----+----+----+----|
+         , 1  , 2  , 3  , 4  , 5  ,       6  , 7  , 8  , 9  , 0  ,    ,
+  //|----+----+----+----+----+----|     |----+----+----+----+----+----|
+         ,    ,    ,    ,    ,    ,          ,    ,COMM,DOT ,SLSH,    ,
+  //`----+----+----+--+-+----+----/     \----+----+----+----+----+----'
+               RST ,    ,    ,    ,          ,DEL ,    ,
+  //          `----+----+----+----'     `----+----+----+----'
   ),
 
 // 薙刀式
@@ -82,8 +148,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 void matrix_init_user(void) {
   // 薙刀式
-  uint16_t ngonkeys[] = {KC_H, KC_J};
-  uint16_t ngoffkeys[] = {KC_F, KC_G};
+  uint16_t ngonkeys[] = {KC_C_H, KC_G_J};
+  uint16_t ngoffkeys[] = {KC_G_F, KC_C_G};
   set_naginata(_NAGINATA, ngonkeys, ngoffkeys);
   // 薙刀式
 

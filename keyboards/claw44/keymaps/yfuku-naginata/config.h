@@ -10,3 +10,6 @@
 
 #define OLED_UPDATE_INTERVAL 100
 #define OLED_TIMEOUT 600000
+
+
+//#define DEBUG_ACTION 1

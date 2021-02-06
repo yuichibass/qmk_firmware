@@ -59,6 +59,7 @@ uint32_t oled_sleep_timer;
 #define KC_S_EN LSFT_T(KC_LANG2)
 #define KC_S_JA LSFT_T(KC_LANG1)
 
+
 // cmd_t
 #define KC_G_F LCMD_T(KC_F)
 #define KC_G_J RCMD_T(KC_J)
@@ -148,8 +149,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 void matrix_init_user(void) {
   // 薙刀式
-  uint16_t ngonkeys[] = {KC_C_H, KC_G_J};
-  uint16_t ngoffkeys[] = {KC_G_F, KC_C_G};
+  uint16_t ngonkeys[] = {};
+  uint16_t ngoffkeys[] = {};
   set_naginata(_NAGINATA, ngonkeys, ngoffkeys);
   // 薙刀式
 
@@ -159,31 +160,34 @@ void matrix_init_user(void) {
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   oled_sleep_timer = timer_read32() + OLED_TIMEOUT;
 
-  switch (keycode) {
-    case EISU:
-      if (record->event.pressed) {
-        // 薙刀式
-        naginata_off();
-        // 薙刀式
-      }
-      return false;
-      break;
-    case KANA2:
-      if (record->event.pressed) {
-        // 薙刀式
-        naginata_on();
-        // 薙刀式
-      }
-      return false;
-      break;
-  }
-
   // 薙刀式
     if (!process_naginata(keycode, record))
       return false;
   // 薙刀式
-
+ 
   return true;
+}
+
+void post_process_record_user(uint16_t keycode, keyrecord_t *record) {
+  uint16_t key = (keycode)&0xFF;
+  switch (key) {
+    case KC_LANG2:
+      if (record->event.pressed) {
+        // 薙刀式
+        naginata_off();
+        //dprint("NAGINATA OFF\n");
+        // 薙刀式
+      }
+      break;
+    case KC_LANG1:
+      if (record->event.pressed) {
+        // 薙刀式
+        naginata_on();
+        //dprint("NAGINATA ON\n");
+        // 薙刀式
+      }
+      break;
+  }
 }
 
 // 薙刀式 OLED表示
@@ -273,3 +277,11 @@ void oled_task_user(void) {
     }
 }
 #endif
+
+/*
+void keyboard_post_init_user() {
+    debug_enable = true;
+    //debug_matrix=true;
+    //debug_keyboard=true;
+}
+*/

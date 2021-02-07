@@ -26,6 +26,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "action_util.h"
 #include "action.h"
 #include "wait.h"
+#include "quantum_keycodes.h"
+#include "naginata.h"
 
 #ifdef BACKLIGHT_ENABLE
 #    include "backlight.h"
@@ -850,6 +852,14 @@ void register_code(uint8_t code) {
                 }
                 add_key(code);
                 send_keyboard_report();
+            }
+
+            if (code == KC_LANG1) {
+                dprintf("KC_LANG1: %u\n", code);
+                naginata_on();
+            } else if (code == KC_LANG2) {
+                dprintf("KC_LANG2: %u\n", code);
+                naginata_off();
             }
         }
     else if

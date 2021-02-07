@@ -168,8 +168,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   return true;
 }
 
+/*
 void post_process_record_user(uint16_t keycode, keyrecord_t *record) {
+  dprintf("keycode:%u\n", keycode);
   uint16_t key = (keycode)&0xFF;
+  dprintf("key:%u\n", key);
+
   switch (key) {
     case KC_LANG2:
       if (record->event.pressed) {
@@ -189,6 +193,7 @@ void post_process_record_user(uint16_t keycode, keyrecord_t *record) {
       break;
   }
 }
+*/
 
 // 薙刀式 OLED表示
 #ifdef OLED_DRIVER_ENABLE

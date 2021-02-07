@@ -602,8 +602,10 @@ void naginata_on(void) {
   naginata_clear();
   layer_on(naginata_layer);
 
+  /* 魔改造
   tap_code(KC_LANG1); // Mac
   tap_code(KC_HENK); // Win
+  */
 }
 
 // 薙刀式をオフ
@@ -613,8 +615,10 @@ void naginata_off(void) {
   naginata_clear();
   layer_off(naginata_layer);
 
+  /* 魔改造
   tap_code(KC_LANG2); // Mac
   tap_code(KC_MHEN); // Win
+  */
 }
 
 // 薙刀式のon/off状態を返す

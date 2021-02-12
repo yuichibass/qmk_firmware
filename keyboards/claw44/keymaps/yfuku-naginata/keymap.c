@@ -168,33 +168,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   return true;
 }
 
-/*
-void post_process_record_user(uint16_t keycode, keyrecord_t *record) {
-  dprintf("keycode:%u\n", keycode);
-  uint16_t key = (keycode)&0xFF;
-  dprintf("key:%u\n", key);
-
-  switch (key) {
-    case KC_LANG2:
-      if (record->event.pressed) {
-        // 薙刀式
-        naginata_off();
-        //dprint("NAGINATA OFF\n");
-        // 薙刀式
-      }
-      break;
-    case KC_LANG1:
-      if (record->event.pressed) {
-        // 薙刀式
-        naginata_on();
-        //dprint("NAGINATA ON\n");
-        // 薙刀式
-      }
-      break;
-  }
-}
-*/
-
 // 薙刀式 OLED表示
 #ifdef OLED_DRIVER_ENABLE
 oled_rotation_t oled_init_user(oled_rotation_t rotation) {

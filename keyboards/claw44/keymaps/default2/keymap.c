@@ -24,12 +24,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 enum layer_number {
     _QWERTY = 0,
-    _RAISE ,
-    _LOWER ,
+    _RAISE  = 1,
+    _LOWER = 2,
 };
 
-#define KC_L_SPC LT(_LOWER, KC_SPC)  // lower
-#define KC_R_ENT LT(_RAISE, KC_ENT)  // raise
+//#define MO(1) // lower
+//#define MO(2)  // raise
 #define KC_G_JA LGUI_T(KC_LANG1)     // cmd or win
 #define KC_G_EN LGUI_T(KC_LANG2)     // cmd or win
 #define KC_C_BS LCTL_T(KC_BSPC)      // ctrl
@@ -45,30 +45,30 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //|--------+--------+---------+--------+---------+--------|   |--------+---------+--------+---------+--------+--------|
        KC_LALT, KC_Z   , KC_X    , KC_C   , KC_V    , KC_B   ,     KC_N   , KC_M    , KC_COMM, KC_DOT  , KC_SLSH, KC_RSFT,
     //`--------+--------+---------+--------+---------+--------/   \--------+---------+--------+---------+--------+--------'
-                         KC_R_ENT, KC_SPC, KC_BSPC, KC_LGUI, KC_BSPC, KC_ENT, KC_SPC, KC_L_SPC
+                         MO(1), KC_SPC, KC_BSPC, KC_LGUI, KC_RSFT, KC_ENT, KC_SPC, MO(2)
     ),
 
     [_RAISE] = LAYOUT( \
     //,--------+--------+--------+--------+--------+--------.   ,--------+--------+--------+--------+--------+--------.
        KC_ESC, KC_F16,  KC_UP,   KC_NO,   JP_GRV,   JP_LPRN,     JP_RPRN, KC_F16,  KC_UP,    KC_BSPC, KC_NO, KC_BSPC,
     //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
-       KC_LGUI, KC_LEFT, KC_DOWN, KC_RGHT, JP_PERC, JP_LCBR, JP_RCBR, JP_RCBR, KC_DOWN, KC_RGHT, KC_NO, KC_ENT,
+       KC_LGUI, KC_LEFT, KC_DOWN, KC_RGHT, JP_PERC, JP_LCBR,     JP_RCBR, JP_RCBR, KC_DOWN, KC_RGHT, KC_NO, KC_ENT,
     //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
-       KC_LSFT, KC_NO,   KC_LSFT, KC_NO,   JP_QUES, JP_LBRC,  JP_RBRC, KC_NO,   KC_COPY, KC_NO, KC_NO,   KC_RSFT,
+       KC_LSFT, KC_NO,   KC_LSFT, KC_NO,   JP_QUES, JP_LBRC,     JP_RBRC, LGUI(KC_C), LGUI(KC_V), LGUI(KC_X), KC_NO,   KC_RSFT,
     //`--------+--------+--------+--------+--------+--------/   \--------+--------+--------+--------+--------+--------'
-                         KC_TRNS, KC_SPC, KC_BSPC, KC_TRNS,      KC_TRNS, KC_R_ENT, KC_SPC, KC_TRNS 
+                         KC_TRNS, KC_SPC, KC_TRNS, KC_TRNS,      KC_TRNS, KC_TRNS, KC_SPC, KC_TRNS 
     //                  `--------+--------+--------+--------'   `--------+--------+--------+--------'
     ),
 
     [_LOWER] = LAYOUT( \
     //,--------+--------+--------+--------+--------+--------.   ,--------+--------+--------+--------+--------+--------.
-       JP_AT,   KC_PDOT, KC_P7,   KC_P8,   KC_P9,   KC_PSLS,     KC_JYEN, KC_F11,   KC_F12,  KC_PGUP, KC_PGDN, KC_BSPC,
+       JP_AT,   KC_PDOT, KC_P7,   KC_P8,   KC_P9,   KC_PSLS,     KC_JYEN, KC_F11,   KC_F12,  KC_PGUP, RGUI(KC_S), KC_BSPC,
     //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
-       KC_LGUI, KC_PCMM, KC_P4,   KC_P5,   KC_P6,   KC_PMNS,     KC_RO,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_ENT,
+       KC_LGUI, KC_PCMM, KC_P4,   KC_P5,   KC_P6,   KC_PMNS,     KC_RO,   KC_PGUP,  KC_HOME , LGUI(KC_X), UNICODE_MODE_MAC, KC_ENT,
     //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
-       KC_LSFT,   KC_P0,   KC_P1,   KC_P2,   KC_P3,   KC_PPLS,     KC_NUBS, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_RSFT,
+       KC_LSFT,   KC_P0,   KC_P1,   KC_P2,   KC_P3,   KC_PPLS,   KC_NUBS, KC_PGDOWN, KC_END , LGUI(KC_C) , LGUI(KC_V),  KC_RSFT,
     //`--------+--------+--------+--------+--------+--------/   \--------+--------+--------+--------+--------+--------'
-                         KC_TRNS, KC_LCTL, KC_BSPC, KC_TRNS,     KC_TRNS, KC_ENT, KC_RSFT, KC_TRNS
+                         KC_TRNS, KC_LCTL, KC_TRNS, KC_TRNS,     KC_TRNS, KC_TRNS, KC_RSFT, KC_TRNS
     //                  `--------+--------+--------+--------'   `--------+--------+--------+--------'
     ),
 };
@@ -86,6 +86,5 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * │     │   │     │     │         │     │   │   │   │   │     │
  * └─────┴───┴─────┴─────┴─────────┴─────┴───┴───┴───┴───┴─────┘
  */
-
 
 

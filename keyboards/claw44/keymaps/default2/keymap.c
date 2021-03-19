@@ -52,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //,--------+--------+--------+--------+--------+--------.   ,--------+--------+--------+--------+--------+--------.
        KC_ESC, KC_F16,  KC_UP,   KC_NO,   JP_GRV,   JP_LPRN,     JP_RPRN, KC_F16,  KC_UP,    KC_BSPC, KC_NO, KC_BSPC,
     //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
-       KC_LGUI, KC_LEFT, KC_DOWN, KC_RGHT, JP_PERC, JP_LCBR,     JP_RCBR, JP_RCBR, KC_DOWN, KC_RGHT, KC_NO, KC_ENT,
+       KC_LGUI, KC_LEFT, KC_DOWN, KC_RGHT, JP_PERC, JP_LCBR,     JP_RCBR, JP_RCBR, KC_DOWN, KC_RGHT, RGUI(RALT(KC_5)), KC_ENT,
     //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
        KC_LSFT, KC_NO,   KC_LSFT, KC_NO,   JP_QUES, JP_LBRC,     JP_RBRC, LGUI(KC_C), LGUI(KC_V), LGUI(KC_X), KC_NO,   KC_RSFT,
     //`--------+--------+--------+--------+--------+--------/   \--------+--------+--------+--------+--------+--------'

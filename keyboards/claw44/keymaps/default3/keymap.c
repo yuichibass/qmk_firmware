@@ -57,25 +57,25 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_RAISE] = LAYOUT( \
     //,--------+--------+--------+--------+--------+--------.   ,--------+--------+--------+--------+--------+--------.
-       KC_ESC,  JA_HAT,  JA_ENUN, JA_AT,   JP_GRV,  JP_LPRN,     JP_RPRN, KC_F16,  KC_UP,   KC_BSPC, KC_NO, KC_BSPC,
+       KC_ESC,  JA_HAT,  JA_ENUN, KC_KP_ASTERISK, JP_GRV,  JP_LPRN,  JP_RPRN, KC_F16,  KC_UP,   KC_BSPC, KC_NO, KC_BSPC,
     //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
-       KC_LGUI, JA_ENUN, JA_ENVL, KC_NO,   JP_PERC, JP_LCBR,     JP_RCBR, KC_LEFT, KC_DOWN, KC_RGHT, RGUI(RALT(KC_5)), KC_ENT,
+       KC_LGUI, JA_ENUN, JA_ENVL, KC_KP_SLASH, JP_PERC, JP_LCBR,     JP_RCBR, KC_LEFT, KC_DOWN, KC_RGHT, RGUI(RALT(KC_5)), KC_ENT,
     //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
-       KC_LSFT, KC_NO,   JA_ENUN, KC_TILD, JP_QUES, JP_LBRC,     JP_RBRC, LGUI(KC_C), LGUI(KC_V), LGUI(KC_X), KC_NO,   KC_RSFT,
+       KC_LSFT, KC_BSLASH, JA_ENUN, KC_TILD, JP_QUES, JP_LBRC,       JP_RBRC, LGUI(KC_C), LGUI(KC_V), LGUI(KC_X), KC_NO,   KC_RSFT,
     //`--------+--------+--------+--------+--------+--------/   \--------+--------+--------+--------+--------+--------'
-                         KC_TRNS, KC_SPC, KC_TRNS, KC_TRNS,      KC_TRNS, KC_TRNS, KC_SPC, KC_TRNS 
+                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,      KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS 
     //                  `--------+--------+--------+--------'   `--------+--------+--------+--------'
     ),
 
     [_LOWER] = LAYOUT( \
     //,--------+--------+--------+--------+--------+--------.   ,--------+--------+--------+--------+--------+--------.
-       JP_AT,   KC_PDOT, KC_7,    KC_8,    KC_9,    KC_PSLS,      KC_JYEN, KC_F11,   KC_F12,  AU_TOG, RGUI(KC_S), KC_BSPC,
+       JP_AT,   KC_PCMM, KC_7,    KC_8,    KC_9,    KC_PPLS,      KC_JYEN, KC_F11,  KC_F12, KC_MPLY, KC_NO, KC_BSPC,
     //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
-       KC_LGUI, KC_PCMM, KC_4,    KC_5,    KC_6,    KC_PMNS,      KC_RO,  KC_PGUP,  KC_HOME , LGUI(KC_X), UNICODE_MODE_MAC, KC_ENT,
+       KC_LGUI, KC_PDOT, KC_4,    KC_5,    KC_6,    KC_PMNS,      KC_RO,  KC_PGUP,  KC_HOME , LGUI(KC_X), KC_NO, KC_ENT,
     //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
-       KC_LSFT,   KC_0,   KC_1,   KC_2,    KC_3,    KC_PPLS,      KC_NUBS, KC_PGDOWN, KC_END , LGUI(KC_C) , LGUI(KC_V),  KC_RSFT,
+       KC_LSFT,   KC_0,   KC_1,   KC_2,    KC_3,    KC_PEQL,      KC_NUBS, KC_PGDOWN, KC_END , LGUI(KC_C) , LGUI(KC_V),  KC_RSFT,
     //`--------+--------+--------+--------+--------+--------/   \--------+--------+--------+--------+--------+--------'
-                         KC_TRNS, KC_LCTL, KC_TRNS, KC_TRNS,     KC_TRNS, KC_TRNS, KC_RSFT, KC_TRNS
+                         KC_TRNS, KC_LCTL, KC_TRNS, KC_TRNS,     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
     //                  `--------+--------+--------+--------'   `--------+--------+--------+--------'
     ),
 };

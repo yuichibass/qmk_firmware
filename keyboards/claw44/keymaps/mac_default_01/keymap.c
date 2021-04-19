@@ -28,6 +28,10 @@ enum layer_number {
     _LOWER = 2,
 };
 
+//  This keymap is made for Mac general JIS keyboard
+//  original mapping is below and difined some original functions
+
+
 //#define MO(1) // lower
 //#define MO(2)  // raise
 #define KC_G_JA LGUI_T(KC_LANG1)     // cmd or win
@@ -42,6 +46,12 @@ enum layer_number {
 #define JA_ENVL KC_JYEN  // \ and | (EN mark and Vertical Line)
 #define JA_LBRC KC_RBRC  // [ and {
 #define JA_RBRC KC_BSLS  // ] and }
+  
+//  RGUI(RALT(KC_5))  take screenshot
+//  LGUI(KC_C)        copy
+//  LGUI(KC_V)        paste
+//  LGUI(KC_X)        cut
+//  KC_F16            run original apple script and show dictionary tool window in Mac OS
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_QWERTY] = LAYOUT( \
@@ -52,33 +62,36 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //|--------+--------+---------+--------+---------+--------|   |--------+---------+--------+---------+--------+--------|
        KC_LALT, KC_Z   , KC_X    , KC_C   , KC_V    , KC_B   ,     KC_N   , KC_M    , KC_COMM, KC_DOT  , KC_SLSH, KC_RSFT,
     //`--------+--------+---------+--------+---------+--------/   \--------+---------+--------+---------+--------+--------'
-                         MO(1),    KC_SPC, KC_LGUI,   KC_BSPC,     KC_ENT, KC_LSFT,   KC_SPC,  MO(2)
+                         MO(2),    KC_SPC, KC_LGUI,   KC_BSPC,     KC_ENT, KC_LSFT,   KC_SPC,  MO(1)
     ),
 
     [_RAISE] = LAYOUT( \
     //,--------+--------+--------+--------+--------+--------.   ,--------+--------+--------+--------+--------+--------.
-       KC_ESC,  JA_HAT,  JA_ENUN, JA_AT,   JP_GRV,  JP_LPRN,     JP_RPRN, KC_F16,  KC_UP,   KC_BSPC, KC_NO, KC_BSPC,
+       JP_AT,   KC_PCMM, KC_7,    KC_8,    KC_9,    KC_PPLS,      KC_JYEN, KC_F11,  KC_F12, KC_MPLY, KC_NO, KC_BSPC,
     //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
-       KC_LGUI, JA_ENUN, JA_ENVL, KC_NO,   JP_PERC, JP_LCBR,     JP_RCBR, KC_LEFT, KC_DOWN, KC_RGHT, RGUI(RALT(KC_5)), KC_ENT,
+       KC_TRNS, KC_PDOT, KC_4,    KC_5,    KC_6,    KC_PMNS,      KC_RO,  KC_PGUP,  KC_HOME , LGUI(KC_X), KC_NO, KC_ENT,
     //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
-       KC_LSFT, KC_NO,   JA_ENUN, KC_TILD, JP_QUES, JP_LBRC,     JP_RBRC, LGUI(KC_C), LGUI(KC_V), LGUI(KC_X), KC_NO,   KC_RSFT,
+       KC_TRNS,   KC_0,   KC_1,   KC_2,    KC_3,    KC_PEQL,      KC_NUBS, KC_PGDOWN, KC_END , LGUI(KC_C) , LGUI(KC_V),  KC_TRNS,
     //`--------+--------+--------+--------+--------+--------/   \--------+--------+--------+--------+--------+--------'
-                         KC_TRNS, KC_SPC, KC_TRNS, KC_TRNS,      KC_TRNS, KC_TRNS, KC_SPC, KC_TRNS 
+                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
     //                  `--------+--------+--------+--------'   `--------+--------+--------+--------'
     ),
 
     [_LOWER] = LAYOUT( \
     //,--------+--------+--------+--------+--------+--------.   ,--------+--------+--------+--------+--------+--------.
-       JP_AT,   KC_PCMM, KC_7,    KC_8,    KC_9,    KC_PSLS,      KC_JYEN, KC_F11,   KC_F12,  KC_NO, KC_NO, KC_BSPC,
+       KC_ESC,  JA_HAT,  JA_ENUN, KC_KP_ASTERISK, JP_GRV,  JP_LPRN,  JP_RPRN, KC_F16,  KC_UP,   KC_BSPC, KC_NO, KC_BSPC,
     //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
-       KC_LGUI, KC_PDOT, KC_4,    KC_5,    KC_6,    KC_PPLS,      KC_RO,  KC_PGUP,  KC_HOME , LGUI(KC_X), KC_NO, KC_ENT,
+       KC_TRNS, JA_ENUN, JA_ENVL, KC_KP_SLASH, JP_PERC, JP_LCBR,     JP_RCBR, KC_LEFT, KC_DOWN, KC_RGHT, RGUI(RALT(KC_5)), KC_ENT,
     //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
-       KC_LSFT,   KC_0,   KC_1,   KC_2,    KC_3,    KC_PMNS,      KC_NUBS, KC_PGDOWN, KC_END , LGUI(KC_C) , LGUI(KC_V),  KC_RSFT,
+       KC_TRNS, KC_BSLASH, JA_ENUN, KC_TILD, JP_QUES, JP_LBRC,       JP_RBRC, LGUI(KC_C), LGUI(KC_V), LGUI(KC_X), KC_NO,   KC_TRNS,
     //`--------+--------+--------+--------+--------+--------/   \--------+--------+--------+--------+--------+--------'
-                         KC_TRNS, KC_LCTL, KC_TRNS, KC_TRNS,     KC_TRNS, KC_TRNS, KC_RSFT, KC_TRNS
+                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,      KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS 
     //                  `--------+--------+--------+--------'   `--------+--------+--------+--------'
     ),
 };
+
+// under construction keymap window    
+
 
 /* Shifted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐

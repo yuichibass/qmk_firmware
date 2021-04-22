@@ -64,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_RAISE] = LAYOUT( \
     //,--------+--------+--------+--------+--------+--------.   ,--------+--------+--------+--------+--------+--------.
-       JP_AT,   KC_PCMM, KC_7,    KC_8,    KC_9,    KC_PPLS,      KC_JYEN, KC_F11,  KC_F12, KC_MPLY, KC_NO, KC_BSPC,
+       JP_AT,   KC_PCMM, KC_7,    KC_8,    KC_9,    KC_PPLS,      KC_JYEN, KC_F11,  KC_F12, KC_F6, KC_NO, KC_BSPC,
     //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
        KC_TRNS, KC_PDOT, KC_4,    KC_5,    KC_6,    KC_PMNS,      KC_RO,  KC_PGUP,  KC_HOME , LGUI(KC_X), KC_NO, KC_ENT,
     //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|

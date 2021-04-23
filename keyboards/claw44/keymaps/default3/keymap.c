@@ -25,7 +25,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 enum layer_number {
     _QWERTY = 0,
     _RAISE  = 1,
-    _LOWER = 2,
+    _LOWER  = 2,
+    _ADJUST = 3,
 };
 
 //#define MO(1) // lower
@@ -47,7 +48,11 @@ enum layer_number {
 //  LGUI(KC_C)        copy
 //  LGUI(KC_V)        paste
 //  LGUI(KC_X)        cut
+//  KC_F6             start and stop playing
+//  KC_F11            increase the audio volume
+//  KC_F12            decrease the audio volume
 //  KC_F16            Start original apple script and show dictionary tool window in Mac OS
+//  KC_INT1           backslash
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -64,7 +69,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_RAISE] = LAYOUT( \
     //,--------+--------+--------+--------+--------+--------.   ,--------+--------+--------+--------+--------+--------.
-       JP_AT,   KC_PCMM, KC_7,    KC_8,    KC_9,    KC_PPLS,      KC_JYEN, KC_F11,  KC_F12, KC_F6, KC_NO, KC_BSPC,
+       JP_AT,   KC_PCMM, KC_7,    KC_8,    KC_9,    KC_PPLS,      KC_JYEN, KC_F11,  KC_F12, KC_MEDIA_PLAY_PAUSE, KC_NO, KC_BSPC,
     //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
        KC_TRNS, KC_PDOT, KC_4,    KC_5,    KC_6,    KC_PMNS,      KC_RO,  KC_PGUP,  KC_HOME , LGUI(KC_X), KC_NO, KC_ENT,
     //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
@@ -74,34 +79,49 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //                  `--------+--------+--------+--------'   `--------+--------+--------+--------'
     ),
 
+
+   // @     , 7 8 9 +    ¥ F11 F12 F6 No BS
+   // ctrl  . 4 5 6 -    _ UP HOME CUT No ENT
+   // alt   0 1 2 3 =    § DOWN END COPY PASTE SFT
+   
+
     [_LOWER] = LAYOUT( \
     //,--------+--------+--------+--------+--------+--------.   ,--------+--------+--------+--------+--------+--------.
-       KC_ESC,  JA_HAT,  JA_ENUN, KC_KP_ASTERISK, JP_GRV,  JP_LPRN,  JP_RPRN, KC_F16,  KC_UP,   KC_BSPC, KC_NO, KC_BSPC,
+       KC_ESC,  JA_HAT,  JA_ENUN, KC_KP_ASTERISK, JP_GRV,  JP_LPRN,  JP_RPRN, KC_F16,  KC_UP,   KC_BSPC, KC_NO, KC_NO,
     //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
        KC_TRNS, JA_ENUN, JA_ENVL, KC_KP_SLASH, JP_PERC, JP_LCBR,     JP_RCBR, KC_LEFT, KC_DOWN, KC_RGHT, RGUI(RALT(KC_5)), KC_ENT,
     //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
-       KC_TRNS, KC_BSLASH, JA_ENUN, KC_TILD, JP_QUES, JP_LBRC,       JP_RBRC, LGUI(KC_C), LGUI(KC_V), LGUI(KC_X), KC_NO,   KC_TRNS,
+       KC_TRNS, KC_INT1, JA_ENUN, KC_TILD, JP_QUES, JP_LBRC,         JP_RBRC, LGUI(KC_C), LGUI(KC_V), LGUI(KC_X), LGUI(KC_S),   KC_TRNS,
     //`--------+--------+--------+--------+--------+--------/   \--------+--------+--------+--------+--------+--------'
                          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,      KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS 
     //                  `--------+--------+--------+--------'   `--------+--------+--------+--------'
     ),
+
+       // ESC   ^ _ * ` (    ) F16 UP BS No No
+   // ctrl  _ ¥ / % {    } LEFT DOWN RGHT SCRST ENT
+   // alt   ] _ ~ ? [    ] COPY PASTE CUT SAVE SFT
+
+
+    [_LOWER] = LAYOUT( \
+    //,--------+--------+--------+--------+--------+--------.   ,--------+--------+--------+--------+--------+--------.
+       KC_1,  JA_HAT,  JA_ENUN, KC_KP_ASTERISK, JP_GRV,  JP_LPRN,  JP_RPRN, KC_F16,  KC_UP,   KC_BSPC, KC_NO, KC_NO,
+    //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
+       KC_TRNS, JA_ENUN, JA_ENVL, KC_KP_SLASH, JP_PERC, JP_LCBR,     JP_RCBR, KC_LEFT, KC_DOWN, KC_RGHT, RGUI(RALT(KC_5)), KC_ENT,
+    //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------|
+       KC_TRNS, KC_INT1, JA_ENUN, KC_TILD, JP_QUES, JP_LBRC,         JP_RBRC, LGUI(KC_C), LGUI(KC_V), LGUI(KC_X), LGUI(KC_S),   KC_TRNS,
+    //`--------+--------+--------+--------+--------+--------/   \--------+--------+--------+--------+--------+--------'
+                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,      KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS 
+    //                  `--------+--------+--------+--------'   `--------+--------+--------+--------'
+    ),
+
+       // ESC   ^ _ * ` (    ) F16 UP BS No No
+   // ctrl  _ ¥ / % {    } LEFT DOWN RGHT SCRST ENT
+   // alt   ] _ ~ ? [    ] COPY PASTE CUT SAVE SFT
+
+
 };
 
-// under construction keymap window    
 
 
-/* Shifted symbols
- * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐
- * │   │ ! │ " │ # │ $ │ % │ & │ ' │ ( │ ) │   │ = │ ~ │ | │   │
- * ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┤
- * │     │   │   │   │   │   │   │   │   │   │   │ ` │ { │     │
- * ├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┐    │
- * │ Caps │   │   │   │   │   │   │   │   │   │ + │ * │ } │    │
- * ├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴────┤
- * │        │   │   │   │   │   │   │   │ < │ > │ ? │ _ │      │
- * ├─────┬──┴┬──┴──┬┴───┴┬──┴───┴──┬┴───┴┬──┴┬──┴┬──┴┬──┴┬─────┤
- * │     │   │     │     │         │     │   │   │   │   │     │
- * └─────┴───┴─────┴─────┴─────────┴─────┴───┴───┴───┴───┴─────┘
- */
 
 

@@ -19,311 +19,221 @@
   #include "lib/oled_helper.h"
 #endif
 
-enum custom_keycode {
-  Mac_CS = SAFE_RANGE,
-  Mac_PS,
-  Win_CS,
-  Win_PS,
-  IOS_CS,
-};
+// Windows/Mac デフォではWin、Premiereスタート
+// これを変えたければ以下のフラグと、このあとのenum layerIDでの構造変更をすること
+static bool Win_or_Mac = true;
+//Premiere or AfterEffects
+static bool P_or_AE = true;
+
+// LAYER
+//Premiereに3レイヤー、AEに3レイヤー、それぞれWinMac、共通でテンキーとスイッチレイヤー
 enum layerID {
-  MAC_CS_1 = 0,
-  MAC_CS_2,
-  MAC_PS_1,
-  MAC_PS_2,
-  WIN_CS_1,
-  WIN_CS_2,
-  WIN_PS_1,
-  WIN_PS_2,
-  IOS_CS_1,
-  IOS_CS_2,
-  SETTING,
+  // Win
+  _0_Win_P = 0,  // default layer
+  _1_Win_P,
+  _2_Win_P,
+  // ３レイヤーごとにペアになっているので、デフォにしたいものを３レイヤーごとここにもってくるとデフォを変えられるよ
+  // 最後の切り替えマクロ200行以降でベースレイヤーをどれにしたかで処理を変えること
+
+  _0_Win_AE,
+  _1_Win_AE,
+  _2_Win_AE,
+
+  // Mac
+  _0_Mac_P,
+  _1_Mac_P,
+  _2_Mac_P,
+
+  _0_Mac_AE,
+  _1_Mac_AE,
+  _2_Mac_AE,
+  // テンキーと切り替えレイヤー
+  _ten,
+  _SWITCH,
 };
 
+// MACRO
+enum custom_keycodes {
+  // Win/Mac Premiere/AfrerEffects切り替え用
+  MC_Win_P = SAFE_RANGE,
+  MC_Mac_P,
+  MC_Win_AE,
+  MC_Mac_AE,
+};
+
+
+// KEYMAP //////////////////////////////////////////////////////////////
+// 一段目 1,2,3,4, 上のエンコのクリック,
+// 二段目 1,2,3,4, 下のエンコのクリック,
+//    親指  1,2,3, 4
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    // Mac
-    // Clip Studio
-    [MAC_CS_1] = LAYOUT(
-      KC_TAB,       LGUI(KC_A), KC_E,         KC_P,          LGUI(KC_0),
-      MO(MAC_CS_2), KC_M,       KC_BSPC,      KC_B,          KC_HYPR,
-                    KC_LSFT,    KC_LGUI,      LGUI(KC_Z),    KC_SPC
+    // 注：LT(),MT()の中のキーは、Basic Keycodesでないといけない制約がある。なのでレイヤーキーの単キーは、単純なキーという縛りがあるよ。
+    ///////////////////Windows
+    // Win Premiere
+    [_0_Win_P] = LAYOUT(
+      KC_UP,               KC_DOWN,     KC_LEFT,                KC_RGHT,             KC_K,
+      LT(_ten, KC_ENTER),  C(KC_Z),     MT(MOD_LCTL, KC_BSPC),  MT(MOD_LSFT, KC_V),  LT(_SWITCH, KC_JYEN),
+                           C(S(KC_Z)),  C(KC_K),                LT(_2_Win_P, KC_C),  LT(_1_Win_P, KC_SPC)
     ),
-    [MAC_CS_2] = LAYOUT(
-      MO(SETTING),  KC_ESC,     KC_G,         KC_R,          LGUI(KC_GRV),
-      _______,      LGUI(KC_D), KC_K,         KC_F,          LGUI(KC_S),
-                    KC_LALT,    KC_I,         SGUI(KC_Z),    KC_H
+    [_1_Win_P] = LAYOUT(
+      S(KC_I),      S(KC_O),     S(KC_LEFT),   S(KC_RGHT),   _______,
+      C(KC_C),      C(KC_V),     KC_Q,         KC_W,         _______,
+                    C(KC_S),     C(S(KC_A)),   C(KC_A),      _______
     ),
-    // Photoshop
-    [MAC_PS_1] = LAYOUT(
-      KC_TAB,       LGUI(KC_A), KC_E,         KC_B,          LGUI(KC_1),
-      MO(MAC_PS_2), KC_L,       LGUI(KC_DEL), LGUI(KC_QUOT), KC_MEH,
-                    KC_LSFT,    KC_LGUI,      LGUI(KC_Z),    KC_SPC
+    [_2_Win_P] = LAYOUT(
+      KC_I,         KC_O,        C(S(KC_M)),   S(KC_M),   _______,
+      C(S(KC_I)),   C(S(KC_O)),  C(A(KC_M)),   KC_M,      _______,
+                    KC_MUTE,     KC_F,         _______,   _______
     ),
-    [MAC_PS_2] = LAYOUT(
-      MO(SETTING),  KC_ESC,     KC_G,         KC_R,          KC_ESC,
-      _______,      LGUI(KC_D), KC_V,         LGUI(KC_T),    LGUI(KC_S),
-                    KC_LALT,    KC_I,         SGUI(KC_Z),    KC_H
+    // Win AfterEffects
+    [_0_Win_AE] = LAYOUT(
+      C(S(A(KC_LEFT))),    C(S(A(KC_RGHT))),    C(KC_LEFT),             C(KC_RGHT),          S(KC_SLSH),
+      LT(_ten, KC_ENTER),  C(KC_Z),             MT(MOD_LCTL, KC_BSPC),  MT(MOD_LSFT, KC_V),  LT(_SWITCH, KC_SCLN),
+                           C(S(KC_Z)),          C(S(KC_D)),             LT(_2_Win_AE, KC_H), LT(_1_Win_AE, KC_SPC)
+    ),
+    [_1_Win_AE] = LAYOUT(
+      KC_J,         KC_K,        C(S(KC_LEFT)), C(S(KC_RGHT)), _______,
+      C(KC_C),      C(KC_V),     A(KC_RBRC),    A(KC_BSLS),    _______,
+                    C(KC_S),     KC_RBRC,       KC_BSLS,       _______
+    ),
+    [_2_Win_AE] = LAYOUT(
+      KC_R,         KC_S,        KC_P,          KC_A,               _______,
+      KC_E,         KC_M,        KC_T,          MT(MOD_LSFT, KC_U), _______,
+                    C(A(KC_S)),  C(A(KC_B)),    _______,            C(A(KC_SLSH))
     ),
 
-    // Windows
-    // Clip Studio
-    [WIN_CS_1] = LAYOUT(
-      KC_TAB,       LCTL(KC_A), KC_E,         KC_P,          LCTL(KC_0),
-      MO(WIN_CS_2), KC_M,       KC_BSPC,      KC_B,          KC_HYPR,
-                    KC_LSFT,    KC_LCTRL,     LCTL(KC_Z),    KC_SPC
+   /////////////////////Mac
+   // Mac Premiere
+   [_0_Mac_P] = LAYOUT(
+      KC_UP,               KC_DOWN,     KC_LEFT,                KC_RGHT,             KC_K,
+      LT(_ten, KC_ENTER),  G(KC_Z),     MT(MOD_LCTL, KC_BSPC),  MT(MOD_LSFT, KC_V),  LT(_SWITCH, KC_JYEN),
+                           G(S(KC_Z)),  G(KC_K),                LT(_2_Mac_P, KC_C),  LT(_1_Mac_P, KC_SPC)
     ),
-    [WIN_CS_2] = LAYOUT(
-      MO(SETTING),  KC_ESC,     KC_G,         KC_R,          LCTL(KC_GRV),
-      _______,      LCTL(KC_D), KC_K,         KC_F,          LCTL(KC_S),
-                    KC_LALT,    KC_I,         C(S(KC_Z)),    KC_H
+    [_1_Mac_P] = LAYOUT(
+      S(KC_I),      S(KC_O),     S(KC_LEFT),   S(KC_RGHT),   _______,
+      G(KC_C),      G(KC_V),     KC_Q,         KC_W,         _______,
+                    G(KC_S),     G(S(KC_A)),   G(KC_A),      _______
     ),
-    // Photoshop
-    [WIN_PS_1] = LAYOUT(
-      KC_TAB,       LCTL(KC_A), KC_E,         KC_B,          LCTL(KC_1),
-      MO(WIN_PS_2), KC_L,       LCTL(KC_DEL), LCTL(KC_QUOT), KC_MEH,
-                    KC_LSFT,    KC_LCTRL,     LCTL(KC_Z),    KC_SPC
+    [_2_Mac_P] = LAYOUT(
+      KC_I,         KC_O,        G(S(KC_M)),   S(KC_M),   _______,
+      G(S(KC_I)),   G(S(KC_O)),  G(A(KC_M)),   KC_M,      _______,
+                    KC_MUTE,     KC_F,         _______,   _______
     ),
-    [WIN_PS_2] = LAYOUT(
-      MO(SETTING),  KC_ESC,     KC_G,         KC_R,          KC_ESC,
-      _______,      LCTL(KC_D), KC_V,         LCTL(KC_T),    LCTL(KC_S),
-                    KC_LALT,    KC_I,         C(S(KC_Z)),    KC_H
+    // Mac AfterEffects
+    [_0_Mac_AE] = LAYOUT(
+      G(S(A(KC_LEFT))),    G(S(A(KC_RGHT))),    G(KC_LEFT),             G(KC_RGHT),          S(KC_SLSH),
+      LT(_ten, KC_ENTER),  G(KC_Z),             MT(MOD_LCTL, KC_BSPC),  MT(MOD_LSFT, KC_V),  LT(_SWITCH, KC_SCLN),
+                           G(S(KC_Z)),          G(S(KC_D)),             LT(_2_Mac_AE, KC_H), LT(_1_Mac_AE, KC_SPC)
     ),
-    // iOS
-    // Clip Studio
-    [IOS_CS_1] = LAYOUT(
-      KC_TAB,       LGUI(KC_A), KC_E,         KC_P,          LGUI(KC_0),
-      MO(IOS_CS_2), KC_M,       KC_BSPC,      KC_B,          LGUI(KC_LALT),
-                    KC_LSFT,    KC_LGUI,      LGUI(KC_Z),    KC_SPC
+    [_1_Mac_AE] = LAYOUT(
+      KC_J,         KC_K,        G(S(KC_LEFT)), G(S(KC_RGHT)), _______,
+      G(KC_C),      G(KC_V),     A(KC_RBRC),    A(KC_BSLS),    _______,
+                    G(KC_S),     KC_RBRC,       KC_BSLS,       _______
     ),
-    [IOS_CS_2] = LAYOUT(
-      MO(SETTING),  KC_ESC,     KC_G,         KC_R,          LGUI(KC_EQL),
-      _______,      LGUI(KC_D), KC_K,         KC_F,          LGUI(KC_S),
-                    KC_LALT,    KC_I,         SGUI(KC_Z),    KC_H
+    [_2_Mac_AE] = LAYOUT(
+      KC_R,         KC_S,        KC_P,          KC_A,               _______,
+      KC_E,         KC_M,        KC_T,          MT(MOD_LSFT, KC_U), _______,
+                    G(A(KC_S)),  G(A(KC_B)),    _______,            G(A(KC_SLSH))
     ),
-    [SETTING] = LAYOUT(
-      _______, IOS_CS, Win_CS, Mac_CS, KC_NO,
-      _______, KC_NO,  Win_PS, Mac_PS, KC_NO,
-               KC_NO,  KC_NO,  KC_NO,  KC_NO
+
+    // テンキー
+    [_ten] = LAYOUT(
+      KC_DOT,       KC_1,        KC_2,          KC_3,       _______,
+      _______,      KC_4,        KC_5,          KC_6,       KC_MINUS,
+                    KC_7,        KC_8,          KC_9,       KC_0
     ),
+    /////// Switch OS/Aplication
+    [_SWITCH] = LAYOUT(
+      _______,    _______,     MC_Win_P,     MC_Win_AE,     _______,
+      _______,    _______,     MC_Mac_P,     MC_Mac_AE,     _______,
+                  _______,     _______,      _______,       _______
+    ),
+
 };
 
+// エンコーダ― Premiere/AfterEffectsでキーバインド切り替える
 void encoder_update_user(uint8_t index, bool clockwise) {
-  uint8_t currentDefault = get_highest_layer(default_layer_state);
-  uint8_t currentLayer = get_highest_layer(layer_state);
-  if (index == 0) { /* the upper encoder */
-    switch (currentDefault) {
-      case MAC_CS_1:
-        if (currentLayer % 2 == 0) {
-          // default layer
-          // Zoom
-          tap_code16(!clockwise ? G(KC_MINS) : G(KC_EQL));
-        } else {
-          // Fn Layer
-          // rotate canvas
-          tap_code(!clockwise ? KC_MINS : KC_QUOT);
-        }
-        break;
-      case MAC_PS_1:
-        if (currentLayer % 2 == 0) {
-          // default layer
-          // Zoom
-          tap_code16(!clockwise ? G(KC_MINS) : G(KC_EQL));
-        } else {
-          // Fn Layer
-          // undo / redo
-          tap_code16(!clockwise ? G(KC_Z) : S(G(KC_Z)));
-        }
-        break;
-      case WIN_CS_1:
-        if (currentLayer % 2 == 0) {
-          // default layer
-          // Zoom
-          tap_code16(!clockwise ? C(KC_MINS) : C(KC_EQL));
-        } else {
-          // Fn Layer
-          // rotate canvas
-          tap_code(!clockwise ? KC_MINS : KC_QUOT);
-        }
-        break;
-      case WIN_PS_1:
-        if (currentLayer % 2 == 0) {
-          // default layer
-          // Zoom
-          tap_code16(!clockwise ? C(KC_MINS) : C(KC_SCLN));
-        } else {
-          // Fn Layer
-          // undo / redo
-          tap_code16(!clockwise ? C(KC_Z) : C(S(KC_Z)));
-        }
-        break;
-      case IOS_CS_1:
-        if (currentLayer % 2 == 0) {
-          // default layer
-          // Zoom 
-          tap_code16(!clockwise ? G(KC_MINS) : G(KC_SCLN));
-        } else {
-          // Fn Layer
-          // rotate canvas
-          tap_code(!clockwise ? KC_MINS : KC_EQL);
-        }
-        break;
-      default:
-        break;
+  if (P_or_AE) {
+  ///// Premiere
+    if (index == 0) { /* the upper encoder */
+      if (clockwise) {
+        SEND_STRING(SS_TAP(X_L));
+        // clockwise: KC_L
+      } else {
+        SEND_STRING(SS_TAP(X_J));
+        // couterclockwise: KC_J
+      }
+    } else if (index == 1) { /* the lower encoder */
+      if (clockwise) {
+        SEND_STRING("'");
+        // clockwise: timeline scale +
+        // 日本語の:キーをUSで打っているので。
+      } else {
+        SEND_STRING("-");
+        //counterclockwise: timeline scale -
+      }
     }
-  } else if (index == 1) { /* the lower encoder */ 
-    switch (currentDefault) {
-      case MAC_CS_1:
-        if (currentLayer % 2 == 0) {
-          // default layer
-          // size of brush
-          tap_code(!clockwise ? KC_LBRC : KC_RBRC);
-        } else {
-          // Fn Layer
-          // opacity of brush
-          tap_code16(!clockwise ? G(KC_LBRC) : G(KC_RBRC));
-        }
-        break;
-      case MAC_PS_1:
-        if (currentLayer % 2 == 0) {
-          // default layer
-          // size of brush
-          tap_code(!clockwise ? KC_LBRC : KC_RBRC);
-        } else {
-          // Fn Layer
-          // opacity of brush
-          tap_code16(!clockwise ? KC_LCBR : KC_RCBR);
-        }
-        break;
-      case WIN_CS_1:
-        if (currentLayer % 2 == 0) {
-          // default layer
-          // rotate canvas
-          tap_code(!clockwise ? KC_LBRC : KC_RBRC);
-        } else {
-          // Fn Layer
-          // opacity of brush
-          tap_code16(!clockwise ? C(KC_LBRC) : C(KC_RBRC));
-        }
-        break;
-      case WIN_PS_1:
-        if (currentLayer % 2 == 0) {
-          // default layer
-          // rotate canvas
-          tap_code(!clockwise ? KC_LBRC : KC_RBRC);
-        } else {
-          // Fn Layer
-          // opacity of brush
-          tap_code16(!clockwise ? KC_LCBR : KC_RCBR);
-        }
-        break;
-      case IOS_CS_1:
-        if (currentLayer % 2 == 0) {
-          // default layer
-          // size of brush
-          tap_code(!clockwise ? KC_RBRC : KC_BSLS);
-        } else {
-          // Fn Layer
-          // opacity of brush
-          tap_code16(!clockwise ? G(KC_RBRC) : G(KC_BSLS));
-        }
-        break;
-      default:
-        break;
+  } else {
+  ////// AfterEffects
+    if (index == 0) { /* the upper encoder */
+      if (clockwise) {
+        SEND_STRING(SS_TAP(X_DOT));
+        // clockwise: KC_DOT
+      } else {
+        SEND_STRING(SS_TAP(X_COMMA));
+        // couterclockwise: KC_COMMA
+      }
+    } else if (index == 1) { /* the lower encoder */
+      if (clockwise) {
+        SEND_STRING("=");
+        // clockwise: timeline scale +
+        // 日本語の^キーをUSで打っているので。
+      } else {
+        SEND_STRING("-");
+        //counterclockwise: timeline scale -
+      }
     }
   }
 }
 
-// custom keycode
-// switch default layer
+// Macros ///////////////////////////////////////////
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
-    case Mac_CS:
+    // Win/Mac, Premiere/AfterEffectsのレイヤーの切り替え
+    case MC_Win_P:
       if (record->event.pressed) {
-        set_single_persistent_default_layer(MAC_CS_1);
+        layer_clear();
+        //Windows/Premiereはベースレイヤーなのでクリアするだけでよい
+        // もしベースレイヤーを変更したら以下を生かしてね
+        // layer_on(_0_Win_P);
+        Win_or_Mac = true;
+        P_or_AE = true;
       }
-      return false;
       break;
-    case Mac_PS:
+    case MC_Win_AE:
       if (record->event.pressed) {
-        set_single_persistent_default_layer(MAC_PS_1);
+        layer_clear();
+        layer_on(_0_Win_AE);
+        Win_or_Mac = true;
+        P_or_AE = false;
       }
-      return false;
       break;
-    case Win_CS:
+    case MC_Mac_P:
       if (record->event.pressed) {
-        set_single_persistent_default_layer(WIN_CS_1);
+        layer_clear();
+        layer_on(_0_Mac_P);
+        Win_or_Mac = false;
+        P_or_AE = true;
       }
-      return false;
       break;
-    case Win_PS:
+    case MC_Mac_AE:
       if (record->event.pressed) {
-        set_single_persistent_default_layer(WIN_PS_1);
+        layer_clear();
+        layer_on(_0_Mac_AE);
+        Win_or_Mac = false;
+        P_or_AE = false;
       }
-      return false;
-      break;
-    case IOS_CS:
-      if (record->event.pressed) {
-        set_single_persistent_default_layer(IOS_CS_1);
-      }
-      return false;
       break;
   }
   return true;
-}
-
-// OLED Display
-#ifdef OLED_DRIVER_ENABLE
-void oled_task_user(void) {
-  // get layer Number
-  uint8_t currentDefault = get_highest_layer(default_layer_state);
-  uint8_t currentLayer = get_highest_layer(layer_state);
-  // write OS mode / 1st line of the logo
-  switch (currentDefault) {
-    case MAC_CS_1:
-    case MAC_PS_1:
-      render_row(0, "Mac ");
-      break;
-    case WIN_CS_1:
-    case WIN_PS_1:
-      render_row(0, "Win ");
-      break;
-    case IOS_CS_1:
-      render_row(0, "iOS ");
-      break;
-    default:
-      render_row(0, "    ");
-  }
-
-  // write Application mode / 2nd line of the logo
-  switch (currentDefault) {
-    case MAC_CS_1:
-    case WIN_CS_1:
-    case IOS_CS_1:
-      render_row(1, "A:CS");
-      break;
-    case MAC_PS_1:
-    case WIN_PS_1:
-      render_row(1, "A:Ps");
-      break;
-    default:
-      render_row(1, "    ");
-  }
-
-  if (currentLayer == SETTING) {
-    // 3rd & 4th line of the logo
-    render_row(2, "****");
-    render_row(3, "LSEL");
-  } else {
-    // Layer Status / 3rd line of the logo
-    if (currentLayer % 2 == 0) {
-      // default layer
-      render_row(2, "L:DF");
-    } else {
-      // Fn Layer
-      render_row(2, "L:Fn");
-    }
-    // pressed key / 4th line of the logo
-    render_row(3, "    ");
-  }
-}
-#endif // #ifdef OLED_DRIVER_ENABLE
+};

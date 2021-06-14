@@ -28,4 +28,9 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 ------------------------------------------------------
 
+2021/05/22
 
+My keymap added as ```default2``` speciallized for [Naginata](http://oookaworks.seesaa.net/article/456099128.html#gsc.tab=0) Japanese typing kaymaps.
+
+```make sofle:default2```
+-----

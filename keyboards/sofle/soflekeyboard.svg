@@ -1,0 +1,6694 @@
+
+  <svg width='840px'
+       height='1150.2160637793877px'
+       viewBox='0 0 840 1150.2160637793877'
+       xmlns='http://www.w3.org/2000/svg'
+       xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <style type='text/css'>
+    .keycap .border { stroke: black; stroke-width: 2; }
+    .keycap .inner.border { stroke: rgba(0,0,0,.1); }
+    </style>
+    <defs>
+      <linearGradient id="DCS">
+        <stop offset="0%" stop-color="black" stop-opacity="0"/>
+        <stop offset="40%" stop-color="black" stop-opacity="0.1"/>
+        <stop offset="60%" stop-color="black" stop-opacity="0.1"/>
+        <stop offset="100%" stop-color="black" stop-opacity="0"/>
+      </linearGradient>
+      <linearGradient id="SPACE" x1="0%" x2="0%" y1="0%" y2="100%">
+        <stop offset="0%" stop-color="black" stop-opacity="0.1"/>
+        <stop offset="20%" stop-color="black" stop-opacity="0.0"/>
+        <stop offset="40%" stop-color="black" stop-opacity="0.0"/>
+        <stop offset="100%" stop-color="black" stop-opacity="0.1"/>
+      </linearGradient>
+      <radialGradient id="DSA">
+        <stop offset="0%" stop-color="black" stop-opacity="0.1"/>
+        <stop offset="10%" stop-color="black" stop-opacity="0.1"/>
+        <stop offset="100%" stop-color="black" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="SA" xlink:href="#DSA" />
+    </defs>
+
+    <g transform='translate(10,10)'>
+      <rect width="820" height="1130.2160637793877"
+            stroke="#ddd" stroke-width="1" fill="#eeeeee" rx="6"/>
+      <g transform='translate(5,5)'>
+        
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="166" y="14.8"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="166" y="14.8"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="167" y="15.8"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="167" y="15.8"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="167" y="15.8"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="598" y="14.8"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="598" y="14.8"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="599" y="15.8"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="599" y="15.8"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="599" y="15.8"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="544" y="17.5"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="544" y="17.5"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="545" y="18.5"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="545" y="18.5"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="545" y="18.5"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="112" y="22.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="112" y="22.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="113" y="23.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="113" y="23.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="113" y="23.9"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="220" y="22.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="220" y="22.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="221" y="23.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="221" y="23.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="221" y="23.9"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="652" y="22.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="652" y="22.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="653" y="23.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="653" y="23.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="653" y="23.9"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="4" y="31.000000000000007"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="4" y="31.000000000000007"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="5" y="32.00000000000001"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="5" y="32.00000000000001"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="5" y="32.00000000000001"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="58" y="31.000000000000007"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="58" y="31.000000000000007"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="59" y="32.00000000000001"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="59" y="32.00000000000001"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="59" y="32.00000000000001"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="274" y="31.000000000000007"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="274" y="31.000000000000007"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="275" y="32.00000000000001"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="275" y="32.00000000000001"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="275" y="32.00000000000001"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="490" y="31.000000000000007"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="490" y="31.000000000000007"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="491" y="32.00000000000001"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="491" y="32.00000000000001"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="491" y="32.00000000000001"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="706" y="31.000000000000007"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="706" y="31.000000000000007"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="707" y="32.00000000000001"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="707" y="32.00000000000001"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="707" y="32.00000000000001"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="760" y="31.000000000000007"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="760" y="31.000000000000007"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="761" y="32.00000000000001"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="761" y="32.00000000000001"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="761" y="32.00000000000001"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="166" y="68.8"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="166" y="68.8"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="167" y="69.8"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="167" y="69.8"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="167" y="69.8"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="598" y="68.8"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="598" y="68.8"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="599" y="69.8"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="599" y="69.8"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="599" y="69.8"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="544" y="71.50000000000001"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="544" y="71.50000000000001"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="545" y="72.50000000000001"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="545" y="72.50000000000001"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="545" y="72.50000000000001"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="112" y="76.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="112" y="76.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="113" y="77.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="113" y="77.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="113" y="77.9"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="220" y="76.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="220" y="76.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="221" y="77.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="221" y="77.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="221" y="77.9"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="652" y="76.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="652" y="76.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="653" y="77.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="653" y="77.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="653" y="77.9"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="4" y="85"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="4" y="85"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="5" y="86"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="5" y="86"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="5" y="86"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="58" y="85"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="58" y="85"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="59" y="86"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="59" y="86"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="59" y="86"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="274" y="85"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="274" y="85"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="275" y="86"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="275" y="86"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="275" y="86"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class=' decal keycap'
+  >
+
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="490" y="85"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="490" y="85"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="491" y="86"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="491" y="86"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="491" y="86"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="706" y="85"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="706" y="85"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="707" y="86"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="707" y="86"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="707" y="86"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="760" y="85"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="760" y="85"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="761" y="86"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="761" y="86"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="761" y="86"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="166" y="122.80000000000001"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="166" y="122.80000000000001"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="167" y="123.80000000000001"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="167" y="123.80000000000001"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="167" y="123.80000000000001"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="598" y="122.80000000000001"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="598" y="122.80000000000001"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="599" y="123.80000000000001"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="599" y="123.80000000000001"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="599" y="123.80000000000001"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="112" y="130.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="112" y="130.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="113" y="131.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="113" y="131.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="113" y="131.9"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="220" y="130.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="220" y="130.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="221" y="131.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="221" y="131.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="221" y="131.9"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="544" y="130.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="544" y="130.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="545" y="131.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="545" y="131.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="545" y="131.9"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="652" y="130.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="652" y="130.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="653" y="131.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="653" y="131.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="653" y="131.9"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="4" y="139"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="4" y="139"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="5" y="140"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="5" y="140"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="5" y="140"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="58" y="139"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="58" y="139"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="59" y="140"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="59" y="140"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="59" y="140"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="274" y="139"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="274" y="139"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="275" y="140"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="275" y="140"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="275" y="140"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="490" y="139"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="490" y="139"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="491" y="140"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="491" y="140"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="491" y="140"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="706" y="139"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="706" y="139"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="707" y="140"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="707" y="140"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="707" y="140"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="760" y="139"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="760" y="139"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="761" y="140"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="761" y="140"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="761" y="140"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="166" y="176.8"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="166" y="176.8"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="167" y="177.8"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="167" y="177.8"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="167" y="177.8"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="598" y="176.8"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="598" y="176.8"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="599" y="177.8"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="599" y="177.8"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="599" y="177.8"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="112" y="184.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="112" y="184.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="113" y="185.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="113" y="185.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="113" y="185.9"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="220" y="184.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="220" y="184.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="221" y="185.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="221" y="185.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="221" y="185.9"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="544" y="184.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="544" y="184.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="545" y="185.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="545" y="185.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="545" y="185.9"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="652" y="184.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="652" y="184.9"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="653" y="185.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="653" y="185.9"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="653" y="185.9"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="4" y="192.99999999999997"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="4" y="192.99999999999997"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="5" y="193.99999999999997"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="5" y="193.99999999999997"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="5" y="193.99999999999997"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="58" y="192.99999999999997"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="58" y="192.99999999999997"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="59" y="193.99999999999997"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="59" y="193.99999999999997"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="59" y="193.99999999999997"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="274" y="192.99999999999997"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="274" y="192.99999999999997"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="275" y="193.99999999999997"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="275" y="193.99999999999997"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="275" y="193.99999999999997"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="490" y="192.99999999999997"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="490" y="192.99999999999997"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="491" y="193.99999999999997"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="491" y="193.99999999999997"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="491" y="193.99999999999997"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="706" y="192.99999999999997"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="706" y="192.99999999999997"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="707" y="193.99999999999997"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="707" y="193.99999999999997"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="707" y="193.99999999999997"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="760" y="192.99999999999997"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="760" y="192.99999999999997"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="761" y="193.99999999999997"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="761" y="193.99999999999997"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="761" y="193.99999999999997"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="152.5" y="238.89999999999998"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="152.5" y="238.89999999999998"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="153.5" y="239.89999999999998"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="153.5" y="239.89999999999998"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="153.5" y="239.89999999999998"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="206.5" y="238.89999999999998"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="206.5" y="238.89999999999998"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="207.5" y="239.89999999999998"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="207.5" y="239.89999999999998"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="207.5" y="239.89999999999998"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="557.5" y="238.89999999999998"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="557.5" y="238.89999999999998"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="558.5" y="239.89999999999998"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="558.5" y="239.89999999999998"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="558.5" y="239.89999999999998"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="98.5" y="247"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="98.5" y="247"
+          width="46" height="46"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="99.5" y="248"
+            width="44" height="42"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="99.5" y="248"
+            width="44" height="42"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="99.5" y="248"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="166" y="430.6"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="166" y="430.6"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="167" y="431.6"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="167" y="431.6"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="167" y="431.6"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="598" y="430.6"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="598" y="430.6"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="599" y="431.6"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="599" y="431.6"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="599" y="431.6"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="544" y="433.3"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="544" y="433.3"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="545" y="434.3"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="545" y="434.3"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="545" y="434.3"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="112" y="438.69999999999993"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="112" y="438.69999999999993"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="113" y="439.69999999999993"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="113" y="439.69999999999993"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="113" y="439.69999999999993"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="220" y="438.69999999999993"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="220" y="438.69999999999993"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="221" y="439.69999999999993"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="221" y="439.69999999999993"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="221" y="439.69999999999993"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="652" y="438.69999999999993"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="652" y="438.69999999999993"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="653" y="439.69999999999993"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="653" y="439.69999999999993"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="653" y="439.69999999999993"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="4" y="446.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="4" y="446.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="5" y="447.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="5" y="447.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="5" y="447.79999999999995"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="58" y="446.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="58" y="446.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="59" y="447.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="59" y="447.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="59" y="447.79999999999995"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="274" y="446.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="274" y="446.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="275" y="447.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="275" y="447.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="275" y="447.79999999999995"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="490" y="446.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="490" y="446.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="491" y="447.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="491" y="447.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="491" y="447.79999999999995"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="706" y="446.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="706" y="446.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="707" y="447.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="707" y="447.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="707" y="447.79999999999995"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="760" y="446.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="760" y="446.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="761" y="447.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="761" y="447.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="761" y="447.79999999999995"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="166" y="484.5999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="166" y="484.5999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="167" y="485.5999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="167" y="485.5999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="167" y="485.5999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="598" y="484.5999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="598" y="484.5999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="599" y="485.5999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="599" y="485.5999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="599" y="485.5999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="544" y="487.29999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="544" y="487.29999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="545" y="488.29999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="545" y="488.29999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="545" y="488.29999999999995"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="112" y="492.69999999999993"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="112" y="492.69999999999993"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="113" y="493.69999999999993"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="113" y="493.69999999999993"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="113" y="493.69999999999993"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="220" y="492.69999999999993"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="220" y="492.69999999999993"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="221" y="493.69999999999993"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="221" y="493.69999999999993"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="221" y="493.69999999999993"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="652" y="492.69999999999993"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="652" y="492.69999999999993"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="653" y="493.69999999999993"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="653" y="493.69999999999993"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="653" y="493.69999999999993"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="4" y="500.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="4" y="500.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="5" y="501.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="5" y="501.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="5" y="501.79999999999995"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="58" y="500.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="58" y="500.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="59" y="501.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="59" y="501.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="59" y="501.79999999999995"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="274" y="500.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="274" y="500.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="275" y="501.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="275" y="501.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="275" y="501.79999999999995"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class=' decal keycap'
+  >
+
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="490" y="500.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="490" y="500.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="491" y="501.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="491" y="501.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="491" y="501.79999999999995"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="706" y="500.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="706" y="500.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="707" y="501.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="707" y="501.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="707" y="501.79999999999995"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="760" y="500.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="760" y="500.79999999999995"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="761" y="501.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="761" y="501.79999999999995"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="761" y="501.79999999999995"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="166" y="538.5999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="166" y="538.5999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="167" y="539.5999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="167" y="539.5999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="167" y="539.5999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="598" y="538.5999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="598" y="538.5999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="599" y="539.5999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="599" y="539.5999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="599" y="539.5999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="112" y="546.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="112" y="546.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="113" y="547.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="113" y="547.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="113" y="547.6999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="220" y="546.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="220" y="546.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="221" y="547.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="221" y="547.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="221" y="547.6999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="544" y="546.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="544" y="546.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="545" y="547.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="545" y="547.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="545" y="547.6999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="652" y="546.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="652" y="546.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="653" y="547.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="653" y="547.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="653" y="547.6999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="4" y="554.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="4" y="554.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="5" y="555.8"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="5" y="555.8"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="5" y="555.8"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="58" y="554.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="58" y="554.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="59" y="555.8"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="59" y="555.8"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="59" y="555.8"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="274" y="554.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="274" y="554.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="275" y="555.8"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="275" y="555.8"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="275" y="555.8"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="490" y="554.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="490" y="554.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="491" y="555.8"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="491" y="555.8"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="491" y="555.8"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="706" y="554.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="706" y="554.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="707" y="555.8"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="707" y="555.8"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="707" y="555.8"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="760" y="554.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="760" y="554.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="761" y="555.8"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="761" y="555.8"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="761" y="555.8"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="166" y="592.5999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="166" y="592.5999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="167" y="593.5999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="167" y="593.5999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="167" y="593.5999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="598" y="592.5999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="598" y="592.5999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="599" y="593.5999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="599" y="593.5999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="599" y="593.5999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="112" y="600.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="112" y="600.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="113" y="601.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="113" y="601.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="113" y="601.6999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="220" y="600.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="220" y="600.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="221" y="601.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="221" y="601.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="221" y="601.6999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="544" y="600.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="544" y="600.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="545" y="601.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="545" y="601.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="545" y="601.6999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="652" y="600.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="652" y="600.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="653" y="601.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="653" y="601.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="653" y="601.6999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="4" y="608.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="4" y="608.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="5" y="609.8"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="5" y="609.8"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="5" y="609.8"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="58" y="608.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="58" y="608.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="59" y="609.8"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="59" y="609.8"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="59" y="609.8"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="274" y="608.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="274" y="608.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="275" y="609.8"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="275" y="609.8"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="275" y="609.8"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="490" y="608.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="490" y="608.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="491" y="609.8"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="491" y="609.8"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="491" y="609.8"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="706" y="608.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="706" y="608.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="707" y="609.8"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="707" y="609.8"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="707" y="609.8"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="760" y="608.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="760" y="608.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="761" y="609.8"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="761" y="609.8"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="761" y="609.8"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="152.5" y="654.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="152.5" y="654.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="153.5" y="655.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="153.5" y="655.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="153.5" y="655.6999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="206.5" y="654.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="206.5" y="654.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="207.5" y="655.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="207.5" y="655.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="207.5" y="655.6999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="557.5" y="654.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="557.5" y="654.6999999999999"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="558.5" y="655.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="558.5" y="655.6999999999999"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="558.5" y="655.6999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="98.5" y="662.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="98.5" y="662.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="99.5" y="663.8"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="99.5" y="663.8"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="99.5" y="663.8"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="166" y="811.3"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="166" y="811.3"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="167" y="812.3"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="167" y="812.3"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="167" y="812.3"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="598" y="811.3"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="598" y="811.3"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="599" y="812.3"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="599" y="812.3"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="599" y="812.3"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="544" y="814"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="544" y="814"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="545" y="815"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="545" y="815"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="545" y="815"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="112" y="819.4"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="112" y="819.4"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="113" y="820.4"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="113" y="820.4"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="113" y="820.4"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="220" y="819.4"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="220" y="819.4"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="221" y="820.4"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="221" y="820.4"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="221" y="820.4"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="652" y="819.4"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="652" y="819.4"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="653" y="820.4"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="653" y="820.4"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="653" y="820.4"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="4" y="827.5000000000001"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="4" y="827.5000000000001"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="5" y="828.5000000000001"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="5" y="828.5000000000001"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="5" y="828.5000000000001"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="58" y="827.5000000000001"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="58" y="827.5000000000001"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="59" y="828.5000000000001"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="59" y="828.5000000000001"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="59" y="828.5000000000001"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="274" y="827.5000000000001"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="274" y="827.5000000000001"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="275" y="828.5000000000001"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="275" y="828.5000000000001"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="275" y="828.5000000000001"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="490" y="827.5000000000001"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="490" y="827.5000000000001"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="491" y="828.5000000000001"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="491" y="828.5000000000001"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="491" y="828.5000000000001"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="706" y="827.5000000000001"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="706" y="827.5000000000001"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="707" y="828.5000000000001"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="707" y="828.5000000000001"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="707" y="828.5000000000001"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="760" y="827.5000000000001"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="760" y="827.5000000000001"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="761" y="828.5000000000001"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="761" y="828.5000000000001"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="761" y="828.5000000000001"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="166" y="865.3"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="166" y="865.3"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="167" y="866.3"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="167" y="866.3"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="167" y="866.3"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="598" y="865.3"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="598" y="865.3"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="599" y="866.3"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="599" y="866.3"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="599" y="866.3"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="544" y="868"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="544" y="868"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="545" y="869"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="545" y="869"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="545" y="869"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="112" y="873.4000000000001"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="112" y="873.4000000000001"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="113" y="874.4000000000001"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="113" y="874.4000000000001"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="113" y="874.4000000000001"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="220" y="873.4000000000001"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="220" y="873.4000000000001"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="221" y="874.4000000000001"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="221" y="874.4000000000001"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="221" y="874.4000000000001"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="652" y="873.4000000000001"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="652" y="873.4000000000001"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="653" y="874.4000000000001"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="653" y="874.4000000000001"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="653" y="874.4000000000001"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="4" y="881.5"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="4" y="881.5"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="5" y="882.5"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="5" y="882.5"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="5" y="882.5"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="58" y="881.5"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="58" y="881.5"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="59" y="882.5"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="59" y="882.5"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="59" y="882.5"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="274" y="881.5"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="274" y="881.5"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="275" y="882.5"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="275" y="882.5"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="275" y="882.5"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class=' decal keycap'
+  >
+
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="490" y="881.5"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="490" y="881.5"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="491" y="882.5"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="491" y="882.5"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="491" y="882.5"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="706" y="881.5"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="706" y="881.5"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="707" y="882.5"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="707" y="882.5"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="707" y="882.5"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="760" y="881.5"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="760" y="881.5"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="761" y="882.5"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="761" y="882.5"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="761" y="882.5"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="166" y="919.3"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="166" y="919.3"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="167" y="920.3"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="167" y="920.3"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="167" y="920.3"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="598" y="919.3"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="598" y="919.3"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="599" y="920.3"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="599" y="920.3"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="599" y="920.3"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="112" y="927.3999999999999"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="112" y="927.3999999999999"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="113" y="928.3999999999999"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="113" y="928.3999999999999"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="113" y="928.3999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="220" y="927.3999999999999"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="220" y="927.3999999999999"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="221" y="928.3999999999999"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="221" y="928.3999999999999"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="221" y="928.3999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="544" y="927.3999999999999"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="544" y="927.3999999999999"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="545" y="928.3999999999999"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="545" y="928.3999999999999"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="545" y="928.3999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="652" y="927.3999999999999"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="652" y="927.3999999999999"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="653" y="928.3999999999999"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="653" y="928.3999999999999"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="653" y="928.3999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="4" y="935.4999999999998"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="4" y="935.4999999999998"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="5" y="936.4999999999998"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="5" y="936.4999999999998"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="5" y="936.4999999999998"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="58" y="935.4999999999998"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="58" y="935.4999999999998"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="59" y="936.4999999999998"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="59" y="936.4999999999998"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="59" y="936.4999999999998"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="274" y="935.4999999999998"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="274" y="935.4999999999998"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="275" y="936.4999999999998"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="275" y="936.4999999999998"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="275" y="936.4999999999998"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="490" y="935.4999999999998"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="490" y="935.4999999999998"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="491" y="936.4999999999998"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="491" y="936.4999999999998"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="491" y="936.4999999999998"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="706" y="935.4999999999998"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="706" y="935.4999999999998"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="707" y="936.4999999999998"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="707" y="936.4999999999998"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="707" y="936.4999999999998"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="760" y="935.4999999999998"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="760" y="935.4999999999998"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="761" y="936.4999999999998"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="761" y="936.4999999999998"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="761" y="936.4999999999998"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="166" y="973.2999999999997"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="166" y="973.2999999999997"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="167" y="974.2999999999997"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="167" y="974.2999999999997"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="167" y="974.2999999999997"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="598" y="973.2999999999997"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="598" y="973.2999999999997"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="599" y="974.2999999999997"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="599" y="974.2999999999997"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="599" y="974.2999999999997"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="112" y="981.3999999999996"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="112" y="981.3999999999996"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="113" y="982.3999999999996"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="113" y="982.3999999999996"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="113" y="982.3999999999996"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="220" y="981.3999999999996"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="220" y="981.3999999999996"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="221" y="982.3999999999996"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="221" y="982.3999999999996"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="221" y="982.3999999999996"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="544" y="981.3999999999996"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="544" y="981.3999999999996"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="545" y="982.3999999999996"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="545" y="982.3999999999996"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="545" y="982.3999999999996"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="652" y="981.3999999999996"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="652" y="981.3999999999996"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="653" y="982.3999999999996"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="653" y="982.3999999999996"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="653" y="982.3999999999996"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="4" y="989.4999999999997"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="4" y="989.4999999999997"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="5" y="990.4999999999997"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="5" y="990.4999999999997"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="5" y="990.4999999999997"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="274" y="989.4999999999997"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="274" y="989.4999999999997"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="275" y="990.4999999999997"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="275" y="990.4999999999997"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="275" y="990.4999999999997"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="490" y="989.4999999999997"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="490" y="989.4999999999997"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="491" y="990.4999999999997"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="491" y="990.4999999999997"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="491" y="990.4999999999997"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="706" y="989.4999999999997"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="706" y="989.4999999999997"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="707" y="990.4999999999997"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="707" y="990.4999999999997"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="707" y="990.4999999999997"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="760" y="989.4999999999997"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="760" y="989.4999999999997"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="761" y="990.4999999999997"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="761" y="990.4999999999997"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="761" y="990.4999999999997"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="152.5" y="1035.3999999999996"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="152.5" y="1035.3999999999996"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="153.5" y="1036.3999999999996"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="153.5" y="1036.3999999999996"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="153.5" y="1036.3999999999996"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="206.5" y="1035.3999999999996"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="206.5" y="1035.3999999999996"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="207.5" y="1036.3999999999996"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="207.5" y="1036.3999999999996"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="207.5" y="1036.3999999999996"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="557.5" y="1035.3999999999996"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="557.5" y="1035.3999999999996"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="558.5" y="1036.3999999999996"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="558.5" y="1036.3999999999996"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="558.5" y="1036.3999999999996"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="98.5" y="1043.4999999999995"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="98.5" y="1043.4999999999995"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="99.5" y="1044.4999999999995"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="99.5" y="1044.4999999999995"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="99.5" y="1044.4999999999995"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="611.5" y="238.89999999999998"
+          width="46" height="46"
+          rx="4" fill="#ffffff" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="611.5" y="238.89999999999998"
+          width="46" height="46"
+          rx="4" fill="#ffffff"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="612.5" y="239.89999999999998"
+            width="44" height="42"
+            rx="4" fill="#fffffe" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="612.5" y="239.89999999999998"
+            width="44" height="42"
+            rx="4" fill="#fffffe"/>
+      
+      
+        
+        
+        <rect x="612.5" y="239.89999999999998"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="611.5" y="654.7"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="611.5" y="654.7"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="612.5" y="655.7"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="612.5" y="655.7"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="612.5" y="655.7"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="611.5" y="1035.4"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="611.5" y="1035.4"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="612.5" y="1036.4"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="612.5" y="1036.4"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="612.5" y="1036.4"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="665.5" y="247"
+          width="46" height="46"
+          rx="4" fill="#ffffff" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="665.5" y="247"
+          width="46" height="46"
+          rx="4" fill="#ffffff"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="666.5" y="248"
+            width="44" height="42"
+            rx="4" fill="#fffffe" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="666.5" y="248"
+            width="44" height="42"
+            rx="4" fill="#fffffe"/>
+      
+      
+        
+        
+        <rect x="666.5" y="248"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="665.5" y="662.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="665.5" y="662.8"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="666.5" y="663.8"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="666.5" y="663.8"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="666.5" y="663.8"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="665.5" y="1043.5"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="665.5" y="1043.5"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="666.5" y="1044.5"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="666.5" y="1044.5"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="666.5" y="1044.5"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="58" y="989.5"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="58" y="989.5"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="59" y="990.5"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="59" y="990.5"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="59" y="990.5"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  
+     transform="rotate(15 0 0)"
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="587.2" y="911.2"
+          width="46" height="73"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="587.2" y="911.2"
+          width="46" height="73"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="588.2" y="912.2"
+            width="44" height="69"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="588.2" y="912.2"
+            width="44" height="69"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="588.2" y="912.2"
+              width="44" height="69"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  
+     transform="rotate(15 40.5 0)"
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="328" y="179.5"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="328" y="179.5"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="329" y="180.5"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="329" y="180.5"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="329" y="180.5"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  
+     transform="rotate(15 40.5 0)"
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="430.6" y="576.4"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="430.6" y="576.4"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="431.6" y="577.4"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="431.6" y="577.4"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="431.6" y="577.4"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  
+     transform="rotate(15 40.5 0)"
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="533.2" y="943.5999999999999"
+          width="46" height="46"
+          rx="4" fill="#ffffff" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="533.2" y="943.5999999999999"
+          width="46" height="46"
+          rx="4" fill="#ffffff"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="534.2" y="944.5999999999999"
+            width="44" height="42"
+            rx="4" fill="#fffffe" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="534.2" y="944.5999999999999"
+            width="44" height="42"
+            rx="4" fill="#fffffe"/>
+      
+      
+        
+        
+        <rect x="534.2" y="944.5999999999999"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  
+     transform="rotate(30 0 0)"
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="422.5" y="36.4"
+          width="46" height="73"
+          rx="4" fill="#ffffff" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="422.5" y="36.4"
+          width="46" height="73"
+          rx="4" fill="#ffffff"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="423.5" y="37.4"
+            width="44" height="69"
+            rx="4" fill="#fffffe" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="423.5" y="37.4"
+            width="44" height="69"
+            rx="4" fill="#fffffe"/>
+      
+      
+        
+        
+        <rect x="423.5" y="37.4"
+              width="44" height="69"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  
+     transform="rotate(30 0 0)"
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="625" y="398.20000000000005"
+          width="46" height="73"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="625" y="398.20000000000005"
+          width="46" height="73"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="626" y="399.20000000000005"
+            width="44" height="69"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="626" y="399.20000000000005"
+            width="44" height="69"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="626" y="399.20000000000005"
+              width="44" height="69"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  
+     transform="rotate(-30 27 0)"
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="233.5" y="427.9"
+          width="46" height="73"
+          rx="4" fill="#e8e7e3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="233.5" y="427.9"
+          width="46" height="73"
+          rx="4" fill="#e8e7e3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="234.5" y="428.9"
+            width="44" height="69"
+            rx="4" fill="#fffffa" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="234.5" y="428.9"
+            width="44" height="69"
+            rx="4" fill="#fffffa"/>
+      
+      
+        
+        
+        <rect x="234.5" y="428.9"
+              width="44" height="69"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  
+     transform="rotate(-30 27 0)"
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="36.4" y="789.7"
+          width="46" height="73"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="36.4" y="789.7"
+          width="46" height="73"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="37.4" y="790.7"
+            width="44" height="69"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="37.4" y="790.7"
+            width="44" height="69"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="37.4" y="790.7"
+              width="44" height="69"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  
+     transform="rotate(-15 0 0)"
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="409" y="376.6"
+          width="46" height="46"
+          rx="4" fill="#b81b24" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="409" y="376.6"
+          width="46" height="46"
+          rx="4" fill="#b81b24"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="410" y="377.6"
+            width="44" height="42"
+            rx="4" fill="#d23836" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="410" y="377.6"
+            width="44" height="42"
+            rx="4" fill="#d23836"/>
+      
+      
+        
+        
+        <rect x="410" y="377.6"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  
+     transform="rotate(-15 0 0)"
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="306.4" y="778.9000000000001"
+          width="46" height="46"
+          rx="4" fill="#ffffff" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="306.4" y="778.9000000000001"
+          width="46" height="46"
+          rx="4" fill="#ffffff"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="307.4" y="779.9000000000001"
+            width="44" height="42"
+            rx="4" fill="#fffffe" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="307.4" y="779.9000000000001"
+            width="44" height="42"
+            rx="4" fill="#fffffe"/>
+      
+      
+        
+        
+        <rect x="307.4" y="779.9000000000001"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  
+     transform="rotate(-15 0 0)"
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="149.8" y="1121.8000000000002"
+          width="46" height="73"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="149.8" y="1121.8000000000002"
+          width="46" height="73"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="150.8" y="1122.8000000000002"
+            width="44" height="69"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="150.8" y="1122.8000000000002"
+            width="44" height="69"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="150.8" y="1122.8000000000002"
+              width="44" height="69"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  
+     transform="rotate(-15 0 0)"
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="203.8" y="1146.1000000000001"
+          width="46" height="46"
+          rx="4" fill="#0078a3" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="203.8" y="1146.1000000000001"
+          width="46" height="46"
+          rx="4" fill="#0078a3"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="204.8" y="1147.1000000000001"
+            width="44" height="42"
+            rx="4" fill="#3691be" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="204.8" y="1147.1000000000001"
+            width="44" height="42"
+            rx="4" fill="#3691be"/>
+      
+      
+        
+        
+        <rect x="204.8" y="1147.1000000000001"
+              width="44" height="42"
+              rx="4" fill="url(#CHICKLET)"/>
+      
+
+     
+   
+  </g>
+
+      </g>
+    </g>
+  </svg>

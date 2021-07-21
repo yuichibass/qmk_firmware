@@ -44,9 +44,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // Mac
     // Clip Studio
     [MAC_CS_1] = LAYOUT(
-      KC_KP_4,       KC_KP_5, KC_KP_6,         KC_KP_PLUS,          LGUI(KC_0),
+      KC_TAB,       KC_KP_5, KC_KP_6,         KC_KP_PLUS,          LGUI(KC_0),
       MO(MAC_CS_2), KC_M,       KC_BSPC,      KC_B,          KC_HYPR,
-                    KC_LSFT,    KC_LGUI,      LGUI(KC_Z),    KC_SPC
+                    KC_KP_4,    KC_KP_5,      KC_KP_6,    KC_KP_PLUS
     ),
     [MAC_CS_2] = LAYOUT(
       MO(SETTING),  KC_ESC,     KC_G,         KC_R,          LGUI(KC_GRV),
@@ -120,7 +120,7 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
         } else {
           // Fn Layer
           // rotate canvas
-          tap_code(!clockwise ? G(KC_UP) : G(KC_DOWN));
+          tap_code16(!clockwise ? G(KC_UP) : G(KC_DOWN));
         }
         break;
       case MAC_PS_1:

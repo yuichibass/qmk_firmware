@@ -45,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // Clip Studio
     [MAC_CS_1] = LAYOUT(
       KC_TAB,       KC_KP_5, KC_KP_6,         KC_KP_PLUS,          LGUI(KC_0),
-      MO(MAC_CS_2), KC_M,       KC_BSPC,      KC_B,          KC_HYPR,
+      MO(MAC_CS_2), KC_M,       KC_BSPC,      LSFT(KC_O),          LSFT(KC_O),
                     KC_KP_4,    KC_KP_5,      KC_KP_6,    KC_KP_PLUS
     ),
     [MAC_CS_2] = LAYOUT(
@@ -180,7 +180,7 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
         } else {
           // Fn Layer
           // opacity of brush
-          tap_code16(!clockwise ? G(KC_UP) : G(KC_DOWN));
+          tap_code16(!clockwise ?  G(KC_RIGHT) : G(KC_LEFT));
         }
         break;
       case MAC_PS_1:

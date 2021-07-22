@@ -9,7 +9,7 @@ MCU = atmega32u4
 #   QMK DFU      qmk-dfu
 #   ATmega32A    bootloadHID
 #   ATmega328P   USBasp
-BOOTLOADER = atmel-dfu
+BOOTLOADER = caterina
 
 # Build Options
 #   change yes to no to disable
@@ -32,6 +32,8 @@ FAUXCLICKY_ENABLE  = no     # Use buzzer to emulate clicky switches
 HD44780_ENABLE     = no     # Enable support for HD44780 based LCDs
 ENCODER_ENABLE     = yes    # Enable support for rotary encoders
 OLED_DRIVER_ENABLE = no     # Enable support for OLED display
+
+TAP_DANCE_ENABLE   = yes
 
 # Additional code
 SRC += lib/oled_helper.c  # Adding OLED

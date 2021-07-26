@@ -184,9 +184,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    /////////////////////Mac
    // Mac Premiere
     [_0_Mac_P] = LAYOUT(
-      S(KC_I),      S(KC_LEFT),             S(KC_RGHT),             S(KC_O),               G(KC_S),
-      KC_UP,        MT(MOD_LGUI, KC_LEFT),  MT(MOD_LSFT, KC_RGHT),  LSFT(KC_O),               MT(MOD_LALT, KC_JYEN),
-                    KC_KP_4,                KC_KP_5,                KC_KP_6,               KC_KP_PLUS
+      G(KC_0),      S(C(KC_COMM)),          C(KC_M),             S(C(KC_DOT)),             G(KC_S),
+      KC_UP,        A(G(KC_DOWN)),          A(G(KC_UP)),         LSFT(KC_O),               MT(MOD_LALT, KC_JYEN),
+                    KC_KP_4,                KC_KP_5,             KC_KP_6,                  KC_KP_PLUS
     ),
     [_1_Mac_P] = LAYOUT(
       KC_I,         KC_Q,                   KC_W,                   KC_O,                KC_SLSH,

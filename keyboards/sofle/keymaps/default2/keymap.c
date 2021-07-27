@@ -113,7 +113,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_LOWER] = LAYOUT( \
   _______,   KC_F1,   KC_F2,   KC_F3,   KC_F4,  KC_F5,                                  KC_F6,  KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,\
   KC_ESC,    JA_HAT,    JA_ENUN,  KC_KP_ASTERISK,  JP_GRV,    JP_LPRN,                 JP_RPRN, KC_F16,  KC_UP,    JP_DQUO,    JP_DLR,  KC_F12, \
-  KC_TRNS, JA_ENUN,    JA_ENVL,   KC_KP_SLASH,  JP_PERC, JP_LCBR,                      JP_RCBR, KC_LEFT, KC_DOWN, KC_RGHT, RGUI(RALT(KC_5)), JP_PIPE, \
+  KC_LSFT, JA_ENUN,    JA_ENVL,   KC_KP_SLASH,  JP_PERC, JP_LCBR,                      JP_RCBR, KC_LEFT, KC_DOWN, KC_RGHT, RGUI(RALT(KC_5)), JP_PIPE, \
   KC_TRNS,  JP_EXLM,   JP_QUES,    KC_TILD,     JP_HASH, JP_LBRC, _______,    _______, JP_RBRC, LGUI(KC_C), LGUI(KC_V), LGUI(KC_X), LGUI(KC_S), _______, \
                        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS\
 ),
@@ -121,7 +121,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,----------------------------------------.                    ,-----------------------------------------.
  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |  @   | ,    | 7    | 8    |  9   |  +   |                    |   ¥  | F11  | F12  |  F8  |   #  |   ^   |
+ * |  @   | ,    | 7    | 8    |  9   |  +   |                    |   ¥  | F11  | F12  |  F20  |   #  |   ^   |
  * |-------------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      | .    | 4    | 5    |   6  |  -   | -------.    ,------|   _  |PGUP  | HOME |  CUT | *     |  |  
  * |------+------+------+------+------+------|  MUTE  |    |       |------+------+------+------+------+------|
@@ -132,8 +132,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *            `----------------------------------'           '------''---------------------------'
  */
 [_RAISE] = LAYOUT( \
-  JP_AT, _______ , _______ , _______ , _______ , _______,                           _______,  _______  , _______,  _______ ,  _______ ,_______, \
-  JP_AT,  KC_PCMM,  KC_7,   KC_8,  KC_9, KC_PPLS,                           KC_JYEN, KC_F11,   KC_F12, KC_F8,KC_HASH, KC_AMPR, \
+  KC_QUOTE, _______ , _______ , _______ , _______ , _______,                           _______,  _______  , _______,  _______ ,  _______ ,_______, \
+  JP_AT,  KC_PCMM,  KC_7,   KC_8,  KC_9, KC_PPLS,                           KC_JYEN, KC_F11,   KC_F12, KC_F20,KC_HASH, KC_AMPR, \
   KC_LSFT, KC_PDOT,  KC_4,  KC_5,  KC_6, KC_PMNS,                           KC_RO,  KC_PGUP, KC_HOME, LGUI(KC_X),  KC_ASTR , KC_PIPE, \
   KC_TRNS, KC_0,    KC_1, KC_2, KC_3,  KC_PEQL,  KC_0,             _______, KC_NUBS, KC_PGDOWN, KC_END, LGUI(KC_C),   LGUI(KC_V), _______, \
                          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS \

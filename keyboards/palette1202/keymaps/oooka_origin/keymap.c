@@ -155,8 +155,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                     C(KC_Z),                LT(_2_Win_P, KC_J),     LT(_1_Win_P, KC_SPC),  LT(_SPECIAL, KC_L)
     ),
     [_1_Win_P] = LAYOUT(
-      KC_A,         KC_ENTER,               KC_C,                   KC_V,                KC_SLSH,
-      S(C(KC_K)),   C(KC_K),                A(G(KC_Y)),                A(KC_Y),             KC_MUTE,
+      KC_I,         KC_Q,                   KC_W,                   KC_O,                KC_SLSH,
+      S(C(KC_K)),   C(KC_K),                KC_BSPC,                KC_F,                KC_MUTE,
                     C(KC_C) ,               TD(TD_CV),              _______,             C(KC_V)
     ),
     [_2_Win_P] = LAYOUT(
@@ -184,9 +184,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    /////////////////////Mac
    // Mac Premiere
     [_0_Mac_P] = LAYOUT(
-      G(KC_0),      S(C(KC_COMM)),          C(KC_M),                           S(C(KC_DOT)),             G(KC_S),
-      KC_UP,        A(G(KC_DOWN)),          A(G(KC_UP)),                       LSFT(KC_O),               MT(MOD_LALT, KC_JYEN),
-                    KC_KP_4,                LT(_2_Mac_P, KC_KP_5),             LT(_1_Mac_P, KC_KP_6),    LT(_SPECIAL, KC_KP_PLUS)
+      S(KC_I),      S(KC_LEFT),             S(KC_RGHT),             S(KC_O),               G(KC_S),
+      KC_UP,        MT(MOD_LGUI, KC_LEFT),  MT(MOD_LSFT, KC_RGHT),  KC_DOWN,               MT(MOD_LALT, KC_JYEN),
+                    G(KC_Z),                LT(_2_Mac_P, KC_J),     LT(_1_Mac_P, KC_SPC),  LT(_SPECIAL, KC_L)
     ),
     [_1_Mac_P] = LAYOUT(
       KC_I,         KC_Q,                   KC_W,                   KC_O,                KC_SLSH,
@@ -249,10 +249,10 @@ void encoder_update_user(uint8_t index, bool clockwise) {
          // Mac
          if (clockwise) {
             // clockwise: Redo
-            SEND_STRING(SS_LGUI(SS_TAP(X_RIGHT)));
+            SEND_STRING(SS_LSFT(SS_LGUI(SS_TAP(X_Z))));
          } else {
             // couterclockwise: Undo
-            SEND_STRING(SS_LGUI(SS_TAP(X_LEFT)));
+            SEND_STRING(SS_LGUI(SS_TAP(X_Z)));
          }
       }
   } else if (index == 1) {
@@ -272,21 +272,21 @@ void encoder_update_user(uint8_t index, bool clockwise) {
         if (P_or_AE) {
         ///// Premiere
           if (clockwise) {
-              SEND_STRING(SS_LGUI(SS_TAP(X_UP)));
+              SEND_STRING("'");
               // clockwise: timeline scale +
               // 日本語の:キーをUSで打っているので。
           } else {
-              SEND_STRING(SS_LGUI(SS_TAP(X_DOWN)));
+              SEND_STRING("-");
               //counterclockwise: timeline scale -
           }
         } else {
         ////// AfterEffects
           if (clockwise) {
-              SEND_STRING(SS_LGUI(SS_TAP(X_UP)));
+              SEND_STRING("=");
               // clockwise: timeline scale +
               // 日本語の^キーをUSで打っているので。
           } else {
-              SEND_STRING(SS_LGUI(SS_TAP(X_DOWN)));
+              SEND_STRING("-");
               //counterclockwise: timeline scale -
           }
        }

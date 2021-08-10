@@ -408,9 +408,9 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
         }
     } else if (index == 1) {
         if (clockwise) {
-            SEND_STRING(SS_LGUI(SS_TAP(X_LEFT)));
+            tap_code(LGUI(KC_LEFT));
         } else {
-            SEND_STRING(SS_LGUI(SS_TAP(X_RIGHT)));
+            tap_code(LGUI(KC_RIGHT));
         }
     }
     return true;

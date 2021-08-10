@@ -156,7 +156,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [_1_Win_P] = LAYOUT(
       KC_A,         KC_ENTER,               KC_C,                   KC_V,                KC_SLSH,
-      S(C(KC_K)),   C(KC_K),                A(G(KC_Y)),                A(KC_Y),             KC_MUTE,
+      S(C(KC_K)),   C(KC_K),                A(G(KC_Y)),             A(KC_Y),             KC_MUTE,
                     C(KC_C) ,               TD(TD_CV),              _______,             C(KC_V)
     ),
     [_2_Win_P] = LAYOUT(
@@ -185,18 +185,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    // Mac Premiere
     [_0_Mac_P] = LAYOUT(
       G(KC_0),      S(C(KC_COMM)),          C(KC_M),                           S(C(KC_DOT)),             G(KC_S),
-      KC_UP,        A(G(KC_DOWN)),          A(G(KC_UP)),                       LSFT(KC_O),               MT(MOD_LALT, KC_JYEN),
+      KC_KP_1,      A(G(KC_DOWN)),          A(G(KC_UP)),                       LSFT(KC_O),               MT(MOD_LALT, KC_JYEN),
                     KC_KP_4,                LT(_2_Mac_P, KC_KP_5),             LT(_1_Mac_P, KC_KP_6),    LT(_SPECIAL, KC_KP_PLUS)
     ),
     [_1_Mac_P] = LAYOUT(
-      KC_I,         KC_Q,                   KC_W,                   KC_O,                KC_SLSH,
-      S(G(KC_K)),   G(KC_K),                KC_BSPC,                KC_F,                KC_MUTE,
-                    G(KC_C) ,               TD(TD_CV),              _______,             G(KC_V)
-    ),
+      KC_A,         KC_ENTER,               KC_C,                              KC_V,                     KC_SLSH,
+      S(G(KC_K)),   G(KC_K),                KC_BSPC,                           KC_KP_EQUAL,              KC_MUTE,
+                    KC_KP_EQUAL ,           TD(TD_CV),                         _______,                  G(KC_V)
+    ), 
     [_2_Mac_P] = LAYOUT(
-      G(A(KC_M)),   S(G(KC_M)),             S(KC_M),                KC_M,                _______,
-      S(KC_A),      S(G(KC_G)),             G(KC_G),                KC_A,                _______,
-                    S(KC_K),                _______,                G(KC_SPC),           A(KC_K)
+      G(A(KC_M)),   S(G(KC_M)),             S(KC_M),                           KC_M,                     _______,
+      S(KC_A),      S(G(KC_G)),             G(KC_G),                           KC_A,                     _______,
+                    S(KC_K),                _______,                           G(KC_SPC),                A(KC_K)
     ),
     // InOut再生だけWinとMacでショートカットが違う(Op+K)
 

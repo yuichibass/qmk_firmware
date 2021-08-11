@@ -1,8 +1,9 @@
-MCU = atmega32u4
-BOOTLOADER = caterina
-SPLIT_KEYBOARD = yes
-DEFAULT_FOLDER = sofle/rev1
+BOOTLOADER = qmk-dfu
 
+# Build Options
+#   change to "no" to disable the options, or define them in the Makefile in
+#   the appropriate keymap folder that will get included automatically
+#
 BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration(+1000)
 EXTRAKEY_ENABLE = no        # Audio control and System control(+450)
 CONSOLE_ENABLE = no         # Console for debug(+400)

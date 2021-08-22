@@ -1,5 +1,6 @@
 {
     "keyboard_name": "Sofle",
+    "name": "SofleKeyboard",
     "vendorId": "0xFC32",
     "productId": "0x0287",
     "url": "https://github.com/josefadamcik/SofleKeyboard",

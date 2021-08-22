@@ -44,23 +44,54 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     )
 };
 
-#ifdef ENCODER_ENABLE
+void matrix_scan_user(void) {
+    if (IS_PRESSED(encoder1_ccw)) {
+        encoder1_ccw.pressed = false;
+        encoder1_ccw.time = (timer_read() | 1);
+        action_exec(encoder1_ccw);
+    }
+
+    if (IS_PRESSED(encoder1_cw)) {
+        encoder1_cw.pressed = false;
+        encoder1_cw.time = (timer_read() | 1);
+        action_exec(encoder1_cw);
+    }
+
+    if (IS_PRESSED(encoder2_ccw)) {
+        encoder2_ccw.pressed = false;
+        encoder2_ccw.time = (timer_read() | 1);
+        action_exec(encoder2_ccw);
+    }
+
+    if (IS_PRESSED(encoder2_cw)) {
+        encoder2_cw.pressed = false;
+        encoder2_cw.time = (timer_read() | 1);
+        action_exec(encoder2_cw);
+    }
+}
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
-    if (index == 0) {
+    if (index == 0) { /* First encoder */
         if (clockwise) {
-            tap_code(KC_VOLU);
+            encoder1_cw.pressed = true;
+            encoder1_cw.time = (timer_read() | 1);
+            action_exec(encoder1_cw);
         } else {
-            tap_code(KC_VOLD);
+            encoder1_ccw.pressed = true;
+            encoder1_ccw.time = (timer_read() | 1);
+            action_exec(encoder1_ccw);
         }
     } else if (index == 1) {
         if (clockwise) {
-            tap_code(KC_PGDOWN);
+            encoder2_cw.pressed = true;
+            encoder2_cw.time = (timer_read() | 1);
+            action_exec(encoder2_cw);
         } else {
-            tap_code(KC_PGUP);
+            encoder2_ccw.pressed = true;
+            encoder2_ccw.time = (timer_read() | 1);
+            action_exec(encoder2_ccw);
         }
     }
-    return true;
-};
 
-#endif
+    return true;
+}

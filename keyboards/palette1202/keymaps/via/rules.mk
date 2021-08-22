@@ -35,9 +35,4 @@ OLED_DRIVER_ENABLE = no     # Enable support for OLED display
 
 TAP_DANCE_ENABLE   = yes
 
-# Additional code
-SRC += lib/oled_helper.c  # Adding OLED
-
-
-
 VIA_ENABLE = yes

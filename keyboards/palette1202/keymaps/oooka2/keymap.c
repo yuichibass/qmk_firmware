@@ -150,14 +150,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ///////////////////Windows
     // Win Premiere
     [_0_Win_P] = LAYOUT(
-      S(KC_I),      S(KC_LEFT),             S(KC_RGHT),             S(KC_O),               C(KC_S),
-      KC_UP,        MT(MOD_LCTL, KC_LEFT),  MT(MOD_LSFT, KC_RGHT),  KC_DOWN,               MT(MOD_LALT, KC_JYEN),
-                    C(KC_Z),                LT(_2_Win_P, KC_J),     LT(_1_Win_P, KC_SPC),  LT(_SPECIAL, KC_L)
+      G(KC_0),      S(C(KC_COMM)),          C(KC_M),                           S(C(KC_DOT)),             G(KC_S),
+      KC_KP_1,      A(G(KC_DOWN)),          A(G(KC_UP)),                       LSFT(KC_O),               MT(MOD_LALT, KC_JYEN),
+                    KC_KP_4,                LT(_2_Mac_P, KC_KP_5),             LT(_1_Mac_P, KC_KP_6),    LT(_SPECIAL, KC_KP_PLUS)
     ),
     [_1_Win_P] = LAYOUT(
-      KC_A,         KC_ENTER,               KC_C,                   KC_V,                KC_SLSH,
-      S(C(KC_K)),   C(KC_K),                A(G(KC_Y)),             A(KC_Y),             KC_MUTE,
-                    C(KC_C) ,               TD(TD_CV),              _______,             C(KC_V)
+      KC_A,         KC_ENTER,               KC_C,                              KC_V,                     KC_SLSH,
+      S(G(KC_K)),   G(KC_K),                KC_BSPC,                           KC_KP_EQUAL,              KC_MUTE,
+                    KC_KP_EQUAL ,           TD(TD_CV),                         _______,                  G(KC_V)
     ),
     [_2_Win_P] = LAYOUT(
       C(A(KC_M)),   S(C(KC_M)),             S(KC_M),                KC_M,                _______,

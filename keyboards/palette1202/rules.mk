@@ -14,7 +14,7 @@ BOOTLOADER = caterina
 # Build Options
 #   change yes to no to disable
 #
-BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration
+BOOTMAGIC_ENABLE = no      # Virtual DIP switch configuration
 MOUSEKEY_ENABLE  = no       # Mouse keys
 EXTRAKEY_ENABLE  = yes      # Audio control and System control
 CONSOLE_ENABLE   = yes      # Console for debug
@@ -31,7 +31,7 @@ AUDIO_ENABLE       = no     # Audio output on port C6
 FAUXCLICKY_ENABLE  = no     # Use buzzer to emulate clicky switches
 HD44780_ENABLE     = no     # Enable support for HD44780 based LCDs
 ENCODER_ENABLE     = yes    # Enable support for rotary encoders
-OLED_DRIVER_ENABLE = no     # Enable support for OLED display
+OLED_DRIVER_ENABLE = yes     # Enable support for OLED display
 
 TAP_DANCE_ENABLE   = yes
 

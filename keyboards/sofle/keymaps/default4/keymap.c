@@ -285,20 +285,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 // #endif
 
-void matrix_init_user(void) {
-  // 薙刀式
-  uint16_t ngonkeys[] = {KC_H, KC_J};
-  uint16_t ngoffkeys[] = {KC_F, KC_G};
-  set_naginata(_NAGINATA, ngonkeys, ngoffkeys);
+// void matrix_init_user(void) {
+//   // 薙刀式
+//   uint16_t ngonkeys[] = {KC_H, KC_J};
+//   uint16_t ngoffkeys[] = {KC_F, KC_G};
+//   set_naginata(_NAGINATA, ngonkeys, ngoffkeys);
 
-  #ifdef NAGINATA_EDIT_MAC
-  set_unicode_input_mode(UC_OSX);
-  #endif
-  // #ifdef NAGINATA_EDIT_WIN
-  // set_unicode_input_mode(UC_WINC);
-  // #endif
-  // 薙刀式
-}
+//   #ifdef NAGINATA_EDIT_MAC
+//   set_unicode_input_mode(UC_OSX);
+//   #endif
+//   // #ifdef NAGINATA_EDIT_WIN
+//   // set_unicode_input_mode(UC_WINC);
+//   // #endif
+//   // 薙刀式
+// }
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
@@ -312,33 +312,37 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 set_single_persistent_default_layer(_COLEMAK);
             }
             return false;
-        case EISU:
-            if (record->event.pressed) {
-        // 薙刀式
-             naginata_off();
-        // 薙刀式
-        }
-              return false;
-      break;
-    case KANA2:
-      if (record->event.pressed) {
-        // 薙刀式
-            naginata_on();
-        // 薙刀式
-      }
-      return false;
-      break;
-    case LCTOGL:
-      if (record->event.pressed) {
-        mac_live_conversion_toggle();
-      }
-      return false;
-      break;
+          
+        
+
+
+      //   case EISU:
+      //       if (record->event.pressed) {
+      //   // 薙刀式
+      //        naginata_off();
+      //   // 薙刀式
+      //   }
+      //         return false;
+      // break;
+    // case KANA2:
+    //   if (record->event.pressed) {
+    //     // 薙刀式
+    //         naginata_on();
+    //     // 薙刀式
+    //   }
+    //   return false;
+    //   break;
+    // case LCTOGL:
+    //   if (record->event.pressed) {
+    //     mac_live_conversion_toggle();
+    //   }
+    //   return false;
+    //   break;
 
 
     // 薙刀式
-    if (!process_naginata(keycode, record))
-      return false;
+    // if (!process_naginata(keycode, record))
+    //   return false;
     // 薙刀式
 
 
@@ -492,14 +496,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
   // 薙刀式
-  bool a = true;
-  if (naginata_state()) {
-    naginata_mode(keycode, record);
-    a = process_naginata(keycode, record);
-    // update_led();
-  }
-  if (a == false) return false;
-  // 薙刀式
+  // bool a = true;
+  // if (naginata_state()) {
+  //   naginata_mode(keycode, record);
+  //   a = process_naginata(keycode, record);
+  //   // update_led();
+  // }
+  // if (a == false) return false;
+  // // 薙刀式
 
 #ifdef ENCODER_ENABLE
 

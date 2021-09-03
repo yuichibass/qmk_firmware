@@ -8,6 +8,8 @@ OLED_DRIVER_ENABLE = no
 
 UNICODE_ENABLE = yes
 
-SRC +=    naginata_v13.c
 
-EXTRAFLAGS += -flto
+
+CUSTOM_MATRIX = yes
+SRC += matrix_common.c
+

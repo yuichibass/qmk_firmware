@@ -32,131 +32,115 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [0] = LAYOUT(
-      G(KC_0),      S(C(KC_COMM)),          C(KC_M),                           S(C(KC_DOT)),            G(KC_S),                  KC_NO,
-      KC_KP_1,      A(G(KC_DOWN)),          A(G(KC_UP)),                       LSFT(KC_O),              MT(MOD_LALT, KC_JYEN),    KC_NO,
-                    KC_KP_4,                KC_KP_5,                           KC_KP_6,                 KC_KP_PLUS,                 
-                    KC_KP_4,                KC_KP_5,                           KC_KP_6,                 KC_KP_PLUS
+      G(KC_0),      S(C(KC_COMM)),          C(KC_M),                           S(C(KC_DOT)),            G(KC_S),                  KC_NO,  KC_NO,
+      KC_KP_1,      A(G(KC_DOWN)),          A(G(KC_UP)),                       LSFT(KC_O),              MT(MOD_LALT, KC_JYEN),    KC_NO,  KC_NO,
+                    KC_KP_4,                KC_KP_5,                           KC_KP_6,                 KC_KP_PLUS                
+                  
     ),
+  
     [1] = LAYOUT(
-      KC_A,         KC_ENTER,               KC_C,                              KC_A,                    KC_NO,                    KC_NO,
-      S(G(KC_K)),   G(KC_K),                KC_BSPC,                           KC_KP_EQUAL,             KC_NO,                    KC_NO,
-                    KC_NO,                  KC_NO,                             KC_NO,                   KC_NO,
-                    KC_KP_EQUAL ,           KC_Q,                             _______,                  KC_NO
+      KC_A,         KC_ENTER,               KC_C,                              KC_A,                    KC_NO,                    KC_NO,  KC_NO,
+      S(G(KC_K)),   G(KC_K),                KC_BSPC,                           KC_KP_EQUAL,             KC_NO,                    KC_NO,  KC_NO,
+                    KC_NO,                  KC_NO,                             KC_NO,                   KC_NO
+                
     ), 
+  
     [2] = LAYOUT(
-      G(A(KC_M)),   S(G(KC_M)),             S(KC_M),                           KC_A,                    KC_NO,                    KC_NO,
-      S(KC_A),      S(G(KC_G)),             G(KC_G),                           KC_A,                    KC_NO,                    KC_NO,
-                    KC_NO,                  KC_NO,                             KC_NO,                   KC_NO,
-                    S(KC_K),                _______,                           G(KC_SPC),               A(KC_K)
+      G(A(KC_M)),   S(G(KC_M)),             S(KC_M),                           KC_A,                    KC_NO,                    KC_NO,  KC_NO,
+      S(KC_A),      S(G(KC_G)),             G(KC_G),                           KC_A,                    KC_NO,                    KC_NO,  KC_NO,
+                    KC_NO,                  KC_NO,                             KC_NO,                   KC_NO
+                   
     ),
+  
     [3] = LAYOUT(
-      G(A(KC_M)),   S(G(KC_M)),             S(KC_M),                           KC_A,                    KC_NO,                    KC_NO,
-      S(KC_A),      S(G(KC_G)),             G(KC_G),                           KC_A,                    KC_NO,                    KC_NO,
-                    KC_NO,                  KC_NO,                             KC_NO,                   KC_NO,
-                    S(KC_K),                _______,                           G(KC_SPC),               A(KC_K)
+      G(A(KC_M)),   S(G(KC_M)),             S(KC_M),                           KC_A,                    KC_NO,                    KC_NO,  KC_NO,
+      S(KC_A),      S(G(KC_G)),             G(KC_G),                           KC_A,                    KC_NO,                    KC_NO,  KC_NO,
+                    KC_NO,                  KC_NO,                             KC_NO,                   KC_NO
+                 
     )
 };
 
 
-void encoder_update_user(uint8_t index, bool clockwise) {
-  
-  if (index == 0) {  // first encoder         
-    // Mac
-         if (clockwise) {
-            // clockwise: Redo
-            SEND_STRING(SS_LGUI(SS_TAP(X_RIGHT)));
-         } else {
-            // couterclockwise: Undo
-            SEND_STRING(SS_LGUI(SS_TAP(X_LEFT)));
-         }
-      }
+keyevent_t encoder1_ccw = {
+    .key = (keypos_t){.row = 0, .col = 5},
+    .pressed = false
+};
+
+keyevent_t encoder1_cw = {
+    .key = (keypos_t){.row = 0, .col = 6},
+    .pressed = false
+};
+
+keyevent_t encoder2_ccw = {
+    .key = (keypos_t){.row = 1, .col = 5},
+    .pressed = false
+};
+
+keyevent_t encoder2_cw = {
+    .key = (keypos_t){.row = 1, .col = 6},
+    .pressed = false
+};
 
 
-      
-        else if (index == 1) {
-                 if (clockwise) {
-            // clockwise: Redo
-            SEND_STRING(SS_LGUI(SS_TAP(X_UP)));
-         } else {
-            // couterclockwise: Undo
-            SEND_STRING(SS_LGUI(SS_TAP(X_DOWN)));
-         }
-      }
+
+void matrix_init_user(void) {
+
+}
+
+void matrix_scan_user(void) {
+    if (IS_PRESSED(encoder1_ccw)) {
+        encoder1_ccw.pressed = false;
+        encoder1_ccw.time = (timer_read() | 1);
+        action_exec(encoder1_ccw);
     }
 
+    if (IS_PRESSED(encoder1_cw)) {
+        encoder1_cw.pressed = false;
+        encoder1_cw.time = (timer_read() | 1);
+        action_exec(encoder1_cw);
+    }
 
+    if (IS_PRESSED(encoder2_ccw)) {
+        encoder2_ccw.pressed = false;
+        encoder2_ccw.time = (timer_read() | 1);
+        action_exec(encoder2_ccw);
+    }
 
-// #encoder
-// keyevent_t encoder1_ccw = {
-//     .key = (keypos_t){.row = 0, .col = 5},
-//     .pressed = false
-// };
+    if (IS_PRESSED(encoder2_cw)) {
+        encoder2_cw.pressed = false;
+        encoder2_cw.time = (timer_read() | 1);
+        action_exec(encoder2_cw);
+    }
 
-// keyevent_t encoder1_cw = {
-//     .key = (keypos_t){.row = 0, .col = 6},
-//     .pressed = false
-// };
+}
 
-// keyevent_t encoder2_ccw = {
-//     .key = (keypos_t){.row = 1, .col = 5},
-//     .pressed = false
-// };
+void led_set_user(uint8_t usb_led) {
 
-// keyevent_t encoder2_cw = {
-//     .key = (keypos_t){.row = 1, .col = 6},
-//     .pressed = false
-// };
+}
 
-// void matrix_scan_user(void) {
-//     if (IS_PRESSED(encoder1_ccw)) {
-//         encoder1_ccw.pressed = false;
-//         encoder1_ccw.time = (timer_read() | 1);
-//         action_exec(encoder1_ccw);
-//     }
+bool encoder_update_user(uint8_t index, bool clockwise) {
+    if (index == 0) { /* First encoder */
+        if (clockwise) {
+            encoder1_cw.pressed = true;
+            encoder1_cw.time = (timer_read() | 1);
+            action_exec(encoder1_cw);
+        } else {
+            encoder1_ccw.pressed = true;
+            encoder1_ccw.time = (timer_read() | 1);
+            action_exec(encoder1_ccw);
+        }
+    } else if (index == 1) {
+        if (clockwise) {
+            encoder2_cw.pressed = true;
+            encoder2_cw.time = (timer_read() | 1);
+            action_exec(encoder2_cw);
+        } else {
+            encoder2_ccw.pressed = true;
+            encoder2_ccw.time = (timer_read() | 1);
+            action_exec(encoder2_ccw);
+        }
 
-//     if (IS_PRESSED(encoder1_cw)) {
-//         encoder1_cw.pressed = false;
-//         encoder1_cw.time = (timer_read() | 1);
-//         action_exec(encoder1_cw);
-//     }
-
-//     if (IS_PRESSED(encoder2_ccw)) {
-//         encoder2_ccw.pressed = false;
-//         encoder2_ccw.time = (timer_read() | 1);
-//         action_exec(encoder2_ccw);
-//     }
-
-//     if (IS_PRESSED(encoder2_cw)) {
-//         encoder2_cw.pressed = false;
-//         encoder2_cw.time = (timer_read() | 1);
-//         action_exec(encoder2_cw);
-//     }
-// }
-
-// bool encoder_update_user(uint8_t index, bool clockwise) {
-//     if (index == 0) { /* First encoder */
-//         if (clockwise) {
-//             encoder1_cw.pressed = true;
-//             encoder1_cw.time = (timer_read() | 1);
-//             action_exec(encoder1_cw);
-//         } else {
-//             encoder1_ccw.pressed = true;
-//             encoder1_ccw.time = (timer_read() | 1);
-//             action_exec(encoder1_ccw);
-//         }
-//     } else if (index == 1) {
-//         if (clockwise) {
-//             encoder2_cw.pressed = true;
-//             encoder2_cw.time = (timer_read() | 1);
-//             action_exec(encoder2_cw);
-//         } else {
-//             encoder2_ccw.pressed = true;
-//             encoder2_ccw.time = (timer_read() | 1);
-//             action_exec(encoder2_ccw);
-//         }
-//     }
-
-//     return true;
-// }
-
-
+    
+}
+return true;
+}

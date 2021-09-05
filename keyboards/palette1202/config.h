@@ -27,8 +27,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT      Palette1202
 
 /* key matrix size */
-#define MATRIX_ROWS 4
-#define MATRIX_COLS 6
+#define MATRIX_ROWS 3
+#define MATRIX_COLS 7
 
 #define MATRIX_ROW_PINS { B6, B2, B3 }
 #define MATRIX_COL_PINS { C6, D7, E6, B4, B5 }

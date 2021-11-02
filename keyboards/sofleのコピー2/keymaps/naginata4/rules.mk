@@ -3,7 +3,3 @@ OLED_DRIVER_ENABLE = no
 ENCODER_ENABLE = yes
 CONSOLE_ENABLE = yes
 EXTRAKEY_ENABLE = yes
-
-SRC +=    naginata_v14.c
-
-EXTRAFLAGS += -flto

@@ -1,34 +1,18 @@
 #include QMK_KEYBOARD_H
-
-#include "bootloader.h"
-#ifdef PROTOCOL_LUFA
-  #include "lufa.h"
-  #include "split_util.h"
-#endif
-
 #include "keymap_jp.h"
-
-// 薙刀式
-#include "naginata.h"
-NGKEYS naginata_keys;
-// 薙刀式
 
 enum sofle_layers {
     /* _M_XYZ = Mac Os, _W_XYZ = Win/Linux */
     _QWERTY,
     _COLEMAK,
-// 薙刀式
-    _NAGINATA,  // 薙刀式入力レイヤー
-// 薙刀式
     _LOWER,
     _RAISE,
     _ADJUST,
 };
 
 enum custom_keycodes {
-    KC_QWERTY = NG_SAFE_RANGE,
-    KC_COLEMAK, 
-    KC_NAGINATA,
+    KC_QWERTY = SAFE_RANGE,
+    KC_COLEMAK,
     KC_LOWER,
     KC_RAISE,
     KC_ADJUST,
@@ -36,10 +20,7 @@ enum custom_keycodes {
     KC_NXTWD,
     KC_LSTRT,
     KC_LEND,
-    KC_DLINE,
-    EISU,
-    KANA2,
-    LCTOGL, // Macのライブ変換対応オンオフ
+    KC_DLINE
 };
 
 #define KC_G_JA LGUI_T(KC_LANG1)     // cmd or win
@@ -54,8 +35,6 @@ enum custom_keycodes {
 #define JA_ENVL KC_JYEN  // \ and | (EN mark and Vertical Line)
 #define JA_LBRC KC_RBRC  // [ and {
 #define JA_RBRC KC_BSLS  // ] and }
-#define CTLSPC  CTL_T(KC_SPC)
-#define CTLENT  CTL_T(KC_ENT)
 
 //  RGUI(RALT(KC_5))  take screenshot
 //  LGUI(KC_C)        copy
@@ -66,16 +45,6 @@ enum custom_keycodes {
 //  KC_F12            decrease the audio volume
 //  KC_F16            Start original apple script and show dictionary tool window in Mac OS
 //  KC_INT1           backslash
-
-// naginata custom
-
-// OS切り替え W
-// MacOS Raise + A NGSW_MAC  switchOS(NG_MAC)
-// Linux Raise + Z NGSW_LNX  switchOS(NG_LNX)
-// MacOSのライブ変換対応 ON/OFFトグル Raise + Tab NG_MLV  mac_live_conversion_toggle()
-// 縦書き、横書き ON/OFFトグル Raise + Control NG_TAYO tategaki_toggle()
-// 後置シフト ON/OFFトグル Raise + Escape  NG_KOTI kouchi_shift_toggle()
-// 現在設定の出力   Raise + W NG_SHOS ng_show_os()
 
 // built                qmk compile -kb sofle -km default2
 
@@ -99,10 +68,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_QWERTY] = LAYOUT( \
   KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                     KC_6,    KC_7,    KC_8,    KC_9,    KC_0,  KC_ESC, \
-  KC_Q,   KC_TAB,   KC_W,    KC_E,    KC_R,    KC_T,                     KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,  KC_MINS, \
+  KC_TAB,   KC_Q,   KC_W,    KC_E,    KC_R,    KC_T,                     KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,  KC_MINS, \
   KC_LCTRL, KC_A,   KC_S,    KC_D,    KC_F,    KC_G,                     KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN,  KC_QUOT, \
   KC_LALT,  KC_Z,   KC_X,    KC_C,    KC_V,    KC_B, KC_MUTE,    G(KC_R),KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,  KC_RSFT, \
-                 KC_F18,MO(_LOWER),KC_LGUI, KC_SPC, KC_BSPC,      KC_ENT,  KC_SPC, KC_LSFT, MO(_RAISE), LT(_ADJUST, KC_F17) \
+                 KC_F18,KC_LOWER,KC_LGUI, KC_SPC, KC_BSPC,      KC_ENT,  KC_SPC, KC_LSFT, KC_RAISE, KC_F17 \
 ),
 /*
  * COLEMAK
@@ -127,34 +96,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_LSFT,  KC_Z,   KC_X,    KC_C,    KC_V,    KC_B, KC_MUTE,     XXXXXXX,KC_J,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,  KC_RSFT, \
                  KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS, KC_TRNS,      KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS \
 ),
-
-/*
- * NAGINATA
- * ,-----------------------------------------.                    ,-----------------------------------------.
- * |  `   |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |  ESC |
- * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | TAB  |   Q  |   W  |   E  |   R  |   T  |                    |   Y  |   U  |   I  |   O  |   P  |  -   |
- * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | CTRL |   A  |   S  |   D  |   F  |   G  |-------.    ,-------|   H  |   J  |   K  |   L  |   ;  |  :   |
- * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
- * | Lalt |   Z  |   X  |   C  |   V  |   B  |-------|    |-------|   N  |   M  |   ,  |   .  |   /  |RShift|
- * `-----------------------------------------/       /     \      \-----------------------------------------'
- *            | F18 | LOWER | CMD  | SPC |  /Bspc  /       \Enter \  | SPC | Lshift | RAISE | F17 |
- *            |      |      |      |      |/       /         \      \ |      |      |      |      |
- *            `----------------------------------'           '------''---------------------------'
- */
-
-[_NAGINATA] = LAYOUT( \
-  KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                     KC_6,    KC_7,    KC_8,    KC_9,    KC_0,  KC_ESC, \
-  NG_Q,   KC_TAB,   NG_W,    NG_E,    NG_R,    NG_T,                     NG_Y,    NG_U,    NG_I,    NG_O,    NG_P,  KC_MINS, \
-  KC_LCTRL, NG_A,   NG_S,    NG_D,    NG_F,    NG_G,                     NG_H,    NG_J,    NG_K,    NG_L, NG_SCLN,  KC_QUOT, \
-  KC_LALT,  NG_Z,   NG_X,    NG_C,    NG_V,    NG_B, KC_MUTE,    G(KC_R),NG_N,    NG_M, NG_COMM,  NG_DOT, NG_SLSH,  KC_RSFT, \
-                 KC_F18,KC_LOWER,KC_LGUI, KC_SPC, KC_BSPC,      KC_ENT,  KC_SPC, KC_LSFT, KC_RAISE, KC_TRNS \
-),
-
-
-/* 
- *  LOWER
+/* LOWER
  * ,-----------------------------------------.                    ,-----------------------------------------.
  * |      |  F1  |  F2  |  F3  |  F4  |  F5  |                    |  F6  |  F7  |  F8  |  F9  | F10  | F11  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
@@ -167,8 +109,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *            | F18 | LOWER | CMD  | SPC |  /Bspc  /       \Enter \  | SPC | Lshift | RAISE | F17 |
  *            |      |      |      |      |/       /         \      \ |      |      |      |      |
  *            `----------------------------------'           '------''---------------------------'
- */
-
+ */ 
 [_LOWER] = LAYOUT( \
   _______,   KC_F1,   KC_F2,   KC_F3,   KC_F4,  KC_F5,                                  KC_F6,  KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,\
   KC_ESC,    JA_HAT,    JA_ENUN,  KC_KP_ASTERISK,  JP_GRV,    JP_LPRN,                 JP_RPRN, KC_F16,  KC_UP,    JP_DQUO,    JP_DLR,  KC_F12, \
@@ -176,7 +117,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TRNS,  JP_EXLM,   JP_QUES,    KC_TILD,     JP_HASH, JP_LBRC, _______,    _______, JP_RBRC, LGUI(KC_C), LGUI(KC_V), LGUI(KC_X), LGUI(KC_S), _______, \
                        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS\
 ),
-
 /* RAISE
  * ,----------------------------------------.                    ,-----------------------------------------.
  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
@@ -202,114 +142,99 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------.                    ,-----------------------------------------.
  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | RESET|      |QWERTY|Minimak| QWTY |     |                    | F19  | F20  |  F21 | F22  | F23  | F24 |
+ * | RESET|      |QWERTY|Minimak|      |      |                   | F19  | F20  |  F21 | F22  | F23  | F24 |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |      |      |MACWIN|      | NGNT |      |-------.    ,-------|      | VOLDO| MUTE | VOLUP|      |      |
+ * |      |      |MACWIN|      |      |      |-------.    ,-------|      | VOLDO| MUTE | VOLUP|      |      |
  * |------+------+------+------+------+------|  MUTE |    |       |------+------+------+------+------+------|
- * |      |      |      |      | QWT  |      |-------|    |-------|      | PREV | PLAY | NEXT |      |      |
+ * |      |      |      |      |      |      |-------|    |-------|      | PREV | PLAY | NEXT |      |      |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *            | F18 | LOWER | CMD  | SPC |  /Bspc  /       \Enter \  | SPC | Lshift | RAISE | F17 |
  *            |      |      |      |      |/       /         \      \ |      |      |      |      |
  *            `----------------------------------'           '------''---------------------------'
  */
   [_ADJUST] = LAYOUT( \
-  NGSW_MAC , NG_MLV,  NG_TAYO ,  NG_KOTI , NG_SHOS, XXXXXXX,                     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+  XXXXXXX , XXXXXXX,  XXXXXXX ,  XXXXXXX , XXXXXXX, XXXXXXX,                     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
   RESET  , XXXXXXX,KC_QWERTY,KC_COLEMAK,CG_TOGG,XXXXXXX,                     LGUI(KC_F19), KC_F20, KC_F21, KC_F22, KC_F23, KC_F24, \
-  XXXXXXX , XXXXXXX,CG_TOGG, XXXXXXX,    KC_NAGINATA,  XXXXXXX,                     XXXXXXX, KC_VOLD, KC_MUTE, KC_VOLU, XXXXXXX, XXXXXXX, \
-  XXXXXXX , XXXXXXX, XXXXXXX, XXXXXXX,    KC_QWERTY,  XXXXXXX, XXXXXXX,     XXXXXXX, XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, XXXXXXX, \
+  XXXXXXX , XXXXXXX,CG_TOGG, XXXXXXX,    XXXXXXX,  XXXXXXX,                     XXXXXXX, KC_VOLD, KC_MUTE, KC_VOLU, XXXXXXX, XXXXXXX, \
+  XXXXXXX , XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX,  XXXXXXX, XXXXXXX,     XXXXXXX, XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, XXXXXXX, \
                    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS \
-  ),
+  )
 };
 
-// #ifdef OLED_DRIVER_ENABLE
+#ifdef OLED_DRIVER_ENABLE
 
-// static void render_logo(void) {
-//     static const char PROGMEM qmk_logo[] = {
-//         0x80,0x81,0x82,0x83,0x84,0x85,0x86,0x87,0x88,0x89,0x8a,0x8b,0x8c,0x8d,0x8e,0x8f,0x90,0x91,0x92,0x93,0x94,
-//         0xa0,0xa1,0xa2,0xa3,0xa4,0xa5,0xa6,0xa7,0xa8,0xa9,0xaa,0xab,0xac,0xad,0xae,0xaf,0xb0,0xb1,0xb2,0xb3,0xb4,
-//         0xc0,0xc1,0xc2,0xc3,0xc4,0xc5,0xc6,0xc7,0xc8,0xc9,0xca,0xcb,0xcc,0xcd,0xce,0xcf,0xd0,0xd1,0xd2,0xd3,0xd4,0
-//     };
+static void render_logo(void) {
+    static const char PROGMEM qmk_logo[] = {
+        0x80,0x81,0x82,0x83,0x84,0x85,0x86,0x87,0x88,0x89,0x8a,0x8b,0x8c,0x8d,0x8e,0x8f,0x90,0x91,0x92,0x93,0x94,
+        0xa0,0xa1,0xa2,0xa3,0xa4,0xa5,0xa6,0xa7,0xa8,0xa9,0xaa,0xab,0xac,0xad,0xae,0xaf,0xb0,0xb1,0xb2,0xb3,0xb4,
+        0xc0,0xc1,0xc2,0xc3,0xc4,0xc5,0xc6,0xc7,0xc8,0xc9,0xca,0xcb,0xcc,0xcd,0xce,0xcf,0xd0,0xd1,0xd2,0xd3,0xd4,0
+    };
 
-//     oled_write_P(qmk_logo, false);
-// }
-
-// static void print_status_narrow(void) {
-//     // Print current mode
-//     oled_write_P(PSTR("\n\n"), false);
-//     oled_write_ln_P(PSTR("MODE"), false);
-//     oled_write_ln_P(PSTR(""), false);
-//     if (keymap_config.swap_lctl_lgui) {
-//         oled_write_ln_P(PSTR("MAC"), false);
-//     } else {
-//         oled_write_ln_P(PSTR("WIN"), false);
-//     }
-
-//     switch (get_highest_layer(default_layer_state)) {
-//         case _QWERTY:
-//             oled_write_ln_P(PSTR("Qwrt"), false);
-//             break;
-//         case _COLEMAK:
-//             oled_write_ln_P(PSTR("Clmk"), false);
-//             break;
-//         default:
-//             oled_write_P(PSTR("Undef"), false);
-//     }
-//     oled_write_P(PSTR("\n\n"), false);
-//     // Print current layer
-//     oled_write_ln_P(PSTR("LAYER"), false);
-//     switch (get_highest_layer(layer_state)) {
-//         case _COLEMAK:
-//         case _QWERTY:
-//             oled_write_P(PSTR("Base\n"), false);
-//             break;
-//         case _RAISE:
-//             oled_write_P(PSTR("Raise"), false);
-//             break;
-//         case _LOWER:
-//             oled_write_P(PSTR("Lower"), false);
-//             break;
-//         case _ADJUST:
-//             oled_write_P(PSTR("Adj\n"), false);
-//             break;
-//         default:
-//             oled_write_ln_P(PSTR("Undef"), false);
-//     }
-//     oled_write_P(PSTR("\n\n"), false);
-//     led_t led_usb_state = host_keyboard_led_state();
-//     oled_write_ln_P(PSTR("CPSLK"), led_usb_state.caps_lock);
-// }
-
-// oled_rotation_t oled_init_user(oled_rotation_t rotation) {
-//     if (is_keyboard_master()) {
-//         return OLED_ROTATION_270;
-//     }
-//     return rotation;
-// }
-
-// void oled_task_user(void) {
-//     if (is_keyboard_master()) {
-//         print_status_narrow();
-//     } else {
-//         render_logo();
-//     }
-// }
-
-// #endif
-
-void matrix_init_user(void) {
-  // 薙刀式
-  uint16_t ngonkeys[] = {KC_H, KC_J};
-  uint16_t ngoffkeys[] = {KC_F, KC_G};
-  set_naginata(_NAGINATA, ngonkeys, ngoffkeys);
-
-  #ifdef NAGINATA_EDIT_MAC
-  set_unicode_input_mode(UC_OSX);
-  #endif
-  // #ifdef NAGINATA_EDIT_WIN
-  // set_unicode_input_mode(UC_WINC);
-  // #endif
-  // 薙刀式
+    oled_write_P(qmk_logo, false);
 }
+
+static void print_status_narrow(void) {
+    // Print current mode
+    oled_write_P(PSTR("\n\n"), false);
+    oled_write_ln_P(PSTR("MODE"), false);
+    oled_write_ln_P(PSTR(""), false);
+    if (keymap_config.swap_lctl_lgui) {
+        oled_write_ln_P(PSTR("MAC"), false);
+    } else {
+        oled_write_ln_P(PSTR("WIN"), false);
+    }
+
+    switch (get_highest_layer(default_layer_state)) {
+        case _QWERTY:
+            oled_write_ln_P(PSTR("Qwrt"), false);
+            break;
+        case _COLEMAK:
+            oled_write_ln_P(PSTR("Clmk"), false);
+            break;
+        default:
+            oled_write_P(PSTR("Undef"), false);
+    }
+    oled_write_P(PSTR("\n\n"), false);
+    // Print current layer
+    oled_write_ln_P(PSTR("LAYER"), false);
+    switch (get_highest_layer(layer_state)) {
+        case _COLEMAK:
+        case _QWERTY:
+            oled_write_P(PSTR("Base\n"), false);
+            break;
+        case _RAISE:
+            oled_write_P(PSTR("Raise"), false);
+            break;
+        case _LOWER:
+            oled_write_P(PSTR("Lower"), false);
+            break;
+        case _ADJUST:
+            oled_write_P(PSTR("Adj\n"), false);
+            break;
+        default:
+            oled_write_ln_P(PSTR("Undef"), false);
+    }
+    oled_write_P(PSTR("\n\n"), false);
+    led_t led_usb_state = host_keyboard_led_state();
+    oled_write_ln_P(PSTR("CPSLK"), led_usb_state.caps_lock);
+}
+
+oled_rotation_t oled_init_user(oled_rotation_t rotation) {
+    if (is_keyboard_master()) {
+        return OLED_ROTATION_270;
+    }
+    return rotation;
+}
+
+void oled_task_user(void) {
+    if (is_keyboard_master()) {
+        print_status_narrow();
+    } else {
+        render_logo();
+    }
+}
+
+#endif
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
@@ -323,30 +248,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 set_single_persistent_default_layer(_COLEMAK);
             }
             return false;
-        // case EISU:
-        //     if (record->event.pressed) {
-        // // 薙刀式
-        //      naginata_off();
-        // // 薙刀式
-        // }
-        //       return false;
-      break;
-    // case KANA2:
-    //   if (record->event.pressed) {
-    //     // 薙刀式
-    //         naginata_on();
-    //     // 薙刀式
-    //   }
-    //   return false;
-    //   break;
-    // case LCTOGL:
-    //   if (record->event.pressed) {
-    //     mac_live_conversion_toggle();
-    //   }
-    //   return false;
-    //   break;
-
-
         case KC_LOWER:
             if (record->event.pressed) {
                 layer_on(_LOWER);
@@ -492,28 +393,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 unregister_code(KC_Z);
             }
             return false;
-
-            // 薙刀式
-       if (!process_naginata(keycode, record))
-         return false;
-  // 薙刀式
-
-
-
-
     }
     return true;
 }
-
-  // 薙刀式
-  // bool a = true;
-  // if (naginata_state()) {
-  //   naginata_mode(keycode, record);
-  //   a = process_naginata(keycode, record);
-  //   // update_led();
-  // }
-  // if (a == false) return false;
-  // 薙刀式
 
 #ifdef ENCODER_ENABLE
 
@@ -526,9 +408,9 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
         }
     } else if (index == 1) {
         if (clockwise) {
-            SEND_STRING(SS_LGUI(SS_TAP(X_LEFT)));
+            tap_code(LGUI(KC_LEFT));
         } else {
-            SEND_STRING(SS_LGUI(SS_TAP(X_RIGHT)));
+            tap_code(LGUI(KC_RIGHT));
         }
     }
     return true;

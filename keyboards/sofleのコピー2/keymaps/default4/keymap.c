@@ -27,8 +27,7 @@ enum sofle_layers {
 
 enum custom_keycodes {
     KC_QWERTY = NG_SAFE_RANGE,
-    KC_COLEMAK, 
-    KC_NAGINATA,
+    KC_COLEMAK,
     KC_LOWER,
     KC_RAISE,
     KC_ADJUST,
@@ -67,16 +66,6 @@ enum custom_keycodes {
 //  KC_F16            Start original apple script and show dictionary tool window in Mac OS
 //  KC_INT1           backslash
 
-// naginata custom
-
-// OS切り替え W
-// MacOS Raise + A NGSW_MAC  switchOS(NG_MAC)
-// Linux Raise + Z NGSW_LNX  switchOS(NG_LNX)
-// MacOSのライブ変換対応 ON/OFFトグル Raise + Tab NG_MLV  mac_live_conversion_toggle()
-// 縦書き、横書き ON/OFFトグル Raise + Control NG_TAYO tategaki_toggle()
-// 後置シフト ON/OFFトグル Raise + Escape  NG_KOTI kouchi_shift_toggle()
-// 現在設定の出力   Raise + W NG_SHOS ng_show_os()
-
 // built                qmk compile -kb sofle -km default2
 
 
@@ -102,7 +91,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_Q,   KC_TAB,   KC_W,    KC_E,    KC_R,    KC_T,                     KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,  KC_MINS, \
   KC_LCTRL, KC_A,   KC_S,    KC_D,    KC_F,    KC_G,                     KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN,  KC_QUOT, \
   KC_LALT,  KC_Z,   KC_X,    KC_C,    KC_V,    KC_B, KC_MUTE,    G(KC_R),KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,  KC_RSFT, \
-                 KC_F18,MO(_LOWER),KC_LGUI, KC_SPC, KC_BSPC,      KC_ENT,  KC_SPC, KC_LSFT, MO(_RAISE), LT(_ADJUST, KC_F17) \
+                 KC_F17,KC_LOWER,KC_LGUI, KC_SPC, KC_BSPC,      KC_ENT,  KC_SPC, KC_LSFT, KC_RAISE, KC_Q \
 ),
 /*
  * COLEMAK
@@ -146,10 +135,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_NAGINATA] = LAYOUT( \
   KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                     KC_6,    KC_7,    KC_8,    KC_9,    KC_0,  KC_ESC, \
-  NG_Q,   KC_TAB,   NG_W,    NG_E,    NG_R,    NG_T,                     NG_Y,    NG_U,    NG_I,    NG_O,    NG_P,  KC_MINS, \
-  KC_LCTRL, NG_A,   NG_S,    NG_D,    NG_F,    NG_G,                     NG_H,    NG_J,    NG_K,    NG_L, NG_SCLN,  KC_QUOT, \
-  KC_LALT,  NG_Z,   NG_X,    NG_C,    NG_V,    NG_B, KC_MUTE,    G(KC_R),NG_N,    NG_M, NG_COMM,  NG_DOT, NG_SLSH,  KC_RSFT, \
-                 KC_F18,KC_LOWER,KC_LGUI, KC_SPC, KC_BSPC,      KC_ENT,  KC_SPC, KC_LSFT, KC_RAISE, KC_TRNS \
+  KC_TAB,   KC_Q,   KC_W,    KC_E,    KC_R,    KC_T,                     KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,  KC_MINS, \
+  KC_LCTRL, KC_A,   KC_S,    KC_D,    KC_F,    KC_G,                     KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN,  KC_QUOT, \
+  KC_LALT,  KC_Z,   KC_X,    KC_C,    KC_V,    KC_B, KC_MUTE,    G(KC_R),KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,  KC_RSFT, \
+                 KC_F18,KC_LOWER,KC_LGUI, KC_SPC, KC_BSPC,      KC_ENT,  KC_SPC, KC_LSFT, KC_RAISE, KC_F17 \
 ),
 
 
@@ -202,21 +191,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------.                    ,-----------------------------------------.
  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | RESET|      |QWERTY|Minimak| QWTY |     |                    | F19  | F20  |  F21 | F22  | F23  | F24 |
+ * | RESET|      |QWERTY|Minimak|      |      |                   | F19  | F20  |  F21 | F22  | F23  | F24 |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |      |      |MACWIN|      | NGNT |      |-------.    ,-------|      | VOLDO| MUTE | VOLUP|      |      |
+ * |      |      |MACWIN|      |      |      |-------.    ,-------|      | VOLDO| MUTE | VOLUP|      |      |
  * |------+------+------+------+------+------|  MUTE |    |       |------+------+------+------+------+------|
- * |      |      |      |      | QWT  |      |-------|    |-------|      | PREV | PLAY | NEXT |      |      |
+ * |      |      |      |      |      |      |-------|    |-------|      | PREV | PLAY | NEXT |      |      |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *            | F18 | LOWER | CMD  | SPC |  /Bspc  /       \Enter \  | SPC | Lshift | RAISE | F17 |
  *            |      |      |      |      |/       /         \      \ |      |      |      |      |
  *            `----------------------------------'           '------''---------------------------'
  */
   [_ADJUST] = LAYOUT( \
-  NGSW_MAC , NG_MLV,  NG_TAYO ,  NG_KOTI , NG_SHOS, XXXXXXX,                     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+  XXXXXXX , XXXXXXX,  XXXXXXX ,  XXXXXXX , XXXXXXX, XXXXXXX,                     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
   RESET  , XXXXXXX,KC_QWERTY,KC_COLEMAK,CG_TOGG,XXXXXXX,                     LGUI(KC_F19), KC_F20, KC_F21, KC_F22, KC_F23, KC_F24, \
-  XXXXXXX , XXXXXXX,CG_TOGG, XXXXXXX,    KC_NAGINATA,  XXXXXXX,                     XXXXXXX, KC_VOLD, KC_MUTE, KC_VOLU, XXXXXXX, XXXXXXX, \
-  XXXXXXX , XXXXXXX, XXXXXXX, XXXXXXX,    KC_QWERTY,  XXXXXXX, XXXXXXX,     XXXXXXX, XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, XXXXXXX, \
+  XXXXXXX , XXXXXXX,CG_TOGG, XXXXXXX,    XXXXXXX,  XXXXXXX,                     XXXXXXX, KC_VOLD, KC_MUTE, KC_VOLU, XXXXXXX, XXXXXXX, \
+  XXXXXXX , XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX,  XXXXXXX, XXXXXXX,     XXXXXXX, XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, XXXXXXX, \
                    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS \
   ),
 };
@@ -296,20 +285,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 // #endif
 
-void matrix_init_user(void) {
-  // 薙刀式
-  uint16_t ngonkeys[] = {KC_H, KC_J};
-  uint16_t ngoffkeys[] = {KC_F, KC_G};
-  set_naginata(_NAGINATA, ngonkeys, ngoffkeys);
+// void matrix_init_user(void) {
+//   // 薙刀式
+//   uint16_t ngonkeys[] = {KC_H, KC_J};
+//   uint16_t ngoffkeys[] = {KC_F, KC_G};
+//   set_naginata(_NAGINATA, ngonkeys, ngoffkeys);
 
-  #ifdef NAGINATA_EDIT_MAC
-  set_unicode_input_mode(UC_OSX);
-  #endif
-  // #ifdef NAGINATA_EDIT_WIN
-  // set_unicode_input_mode(UC_WINC);
-  // #endif
-  // 薙刀式
-}
+//   #ifdef NAGINATA_EDIT_MAC
+//   set_unicode_input_mode(UC_OSX);
+//   #endif
+//   // #ifdef NAGINATA_EDIT_WIN
+//   // set_unicode_input_mode(UC_WINC);
+//   // #endif
+//   // 薙刀式
+// }
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
@@ -323,14 +312,18 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 set_single_persistent_default_layer(_COLEMAK);
             }
             return false;
-        // case EISU:
-        //     if (record->event.pressed) {
-        // // 薙刀式
-        //      naginata_off();
-        // // 薙刀式
-        // }
-        //       return false;
-      break;
+          
+        
+
+
+      //   case EISU:
+      //       if (record->event.pressed) {
+      //   // 薙刀式
+      //        naginata_off();
+      //   // 薙刀式
+      //   }
+      //         return false;
+      // break;
     // case KANA2:
     //   if (record->event.pressed) {
     //     // 薙刀式
@@ -345,6 +338,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     //   }
     //   return false;
     //   break;
+
+
+    // 薙刀式
+    // if (!process_naginata(keycode, record))
+    //   return false;
+    // 薙刀式
 
 
         case KC_LOWER:
@@ -492,15 +491,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 unregister_code(KC_Z);
             }
             return false;
-
-            // 薙刀式
-       if (!process_naginata(keycode, record))
-         return false;
-  // 薙刀式
-
-
-
-
     }
     return true;
 }
@@ -513,7 +503,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   //   // update_led();
   // }
   // if (a == false) return false;
-  // 薙刀式
+  // // 薙刀式
 
 #ifdef ENCODER_ENABLE
 

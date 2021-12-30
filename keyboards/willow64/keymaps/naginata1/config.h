@@ -17,7 +17,7 @@
 #pragma once
 
 #define AUTO_SHIFT_TIMEOUT 170
-#define TAPPING_TERM 200
+#define TAPPING_TERM 210
 #define PERMISSIVE_HOLD
 //#define RETRO_TAPPING
 //#define TAPPING_FORCE_HOLD

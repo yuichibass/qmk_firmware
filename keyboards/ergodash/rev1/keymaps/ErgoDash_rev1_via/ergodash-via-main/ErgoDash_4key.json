@@ -1,7 +1,7 @@
 {
   "name": "ErgoDash",
   "vendorId": "0xFEED",
-  "productId": "0x6060",
+  "productId": "0x6061",
   "lighting": {
     "extends": "qmk_backlight_rgblight"
   },
